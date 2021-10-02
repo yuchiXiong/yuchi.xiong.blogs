@@ -76,9 +76,10 @@
                     - [Rails Migrate关于MySQL lock的一点问题](/技术/框架学习/Rails/Rails-Migrate关于MySQL-lock的一点问题.md)
             - 其他
                 - [rails test等命令卡死常用的解决方案](/技术/框架学习/Rails/Rails-test等命令卡死常用的解决方案.md)
-                - [在Rails中接入微信支付指北](/技术/框架学习/Rails/在Rails中接入微信支付指北.md)
             - 杂谈
                 - [从Rails视角看现代前端：换一种方式实现SPA](/技术/框架学习/Rails/从Rails视角看现代前端：换一种方式实现SPA.md)
+                - [在Rails中接入微信支付指北](/技术/框架学习/Rails/在Rails中接入微信支付指北.md)
+                - [在Rails上搭建React服务端渲染瞎谈](/技术/框架学习/Rails/在Rails上搭建React服务端渲染瞎谈.md)
     - 垃圾教程
         - 运维
             - [云服务器：个人网站初体验](./技术/垃圾教程/云服务器：个人网站初体验.md)
