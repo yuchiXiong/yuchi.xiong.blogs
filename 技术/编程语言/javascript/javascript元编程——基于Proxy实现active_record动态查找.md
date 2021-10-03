@@ -66,11 +66,11 @@ arr.second # 等同于 arr[1]
 arr.last # 等同于 arr[-1]
 ```
 
-不过这种手段也容易带来问题，例如打开类以后覆盖了一个已有的方法，那么极容易导致其它为止的方法调用出现问题。
+不过这种手段也容易带来问题，例如打开类以后覆盖了一个已有的方法，那么极容易导致其它位置的方法调用出现问题。
 
 ### 1.2. method_missing
 
-`Ruby`对象在调用方法时，如果不能找到目标方法，则会尝试执行`method_missing`方法，因而如果将`method_missing`方法看作一层代理，则可以像下面这样以另外一种更灵活的方式实现方法定义：
+`Ruby`对象在调用方法时，如果不能找到目标方法，则会尝试执行`method_missing`方法，我们可以将`method_missing`方法看作一层代理：
 
 ```ruby
 class Array
@@ -129,11 +129,11 @@ console.log(testArr.third()); // 等同于 testArr[2]
 console.log(testArr.last()); // 等同于 testArr[3]
 ```
 
-上述例子为数组类扩展了十三个方法，并且我们只编写了很少的代码就实现了。
+上述例子动态的为数组类扩展了多个**类似的**方法。
 
-不过，上面的例子里，我们其实并不一定需要所有的方法，有些时候也许我们只需要`first`和`last`方法，但基于这段代码定义的方法实际都挂到了`prototype`上。
+不过这里有一个小细节，其实我并不一定需要所有的方法，有时候可能到头来只调用了`first`和`last`方法，但这些方法却实实在在的都挂到了`prototype`上。
 
-基于代理方式来实现的方法动态定义其实可以解决这个问题。
+基于代理来实现的方法动态定义其实可以解决这个问题。
 
 ```javascript
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -153,32 +153,90 @@ const customArr = new Proxy(arr, {
 console.log(customArr.average());
 ```
 
-注意几点细节：
+需要注意几点细节：
 
-1. 此处实际相当于通过代理扩展了**实例方法而非类方法**，或许当代理目标是一个对象时，这样的表述会自然很多，但如果我们要像`Open Class`那样为类扩展方法，则需要调整为代理一个类。
-2. 如果你希望扩展的是`Array/Object`这一类可以通过字面量方式实例化的类时，考虑到代理过后的类不再能通过字面量方式初始化，或许`prototype`确实是更实用的方式。
+1. 此处通过代理扩展的是**实例方法而非类方法**。
+2. 考虑到数组和对象都可以用字面量的方式完成初始化，打开`Array/Object`类的时候，或许`prototype`会更管用一些，因为**prototype修改的是原有的类而代理是创建新的类**。
 
-最后，其实我们完全可以将`average`方法直接放到`prototype`上，但如果我们要定义的是多个存在某种联系的方法，使用这种`Proxy`方式将会灵活的多，关于这一点，接下来要尝试实现的`active_record`动态查找可能是一个不错的案例。
+当然，完全可以将`average`方法直接放到`prototype`上，但如果我们要定义的是多个存在联系的方法，使用这种代理会灵活的多，关于这一点，接下来要尝试实现的`active_record`动态查找可能是一个不错的案例。
 
 ## 3. 基于Proxy实现active_record动态查找
 
 `active_record`是`Ruby On Rails`中的`ORM`库，它有一个非常有用的魔法：假设存在一张数据表`users`，它有三个字段：
 
-- username
-- nickname
-- email
+- `username`
+- `nickname`
+- `email`
 
-此时继承自`ActiveRecord`的实体类可以直接使用三个动态生成的类方法
+根据以往我们对`ORM`的理解，此时需要创建一个实体类，且这个实体类一眼两个需要声明上述的三个属性。不过，在`ActiveRecord`里，创建实体类你只需要继承`ActiveRecord`即可，它会自动的添加类属性，同时还有包括如下三个方法在内的大量数据读写方法：
 
-- find_by_username
-- find_by_nickname
-- find_by_email
-
-而最重要的是，你只需要继承`ActiveRecord`而不需要写任何其它代码。
+- `find_by_username`
+- `find_by_nickname`
+- `find_by_email`
 
 其原理是根据数据表的字段名列表动态定义了各字段的查询方法。
 
-`JavaScript`基于代理也可以实现类似的效果，下面的示例代码没有真正的链接数据库，而是使用了一个`JSON`格式来进行模拟，同时还实现了`active_record`持久化数据的两个方法`save/create`。
+`JavaScript`基于代理也可以实现类似的效果，下面的示例代码没有真正的链接数据库，而是使用了一个对象结构来进行模拟，同时为了让示例看起来像那么回事儿，还实现了`active_record`持久化数据的两个方法`save/create`。
+
+先来看看最终的效果：
+
+```javascript
+const ActiveRecord = require('./ActiveRecord');
+
+// 1. 初始化一个数据源（模拟数据库）
+const DB = {};
+
+ActiveRecord.init({
+    db: DB,
+});
+
+class User extends ActiveRecord { // 2. 定义一个实体类
+}
+
+// 3.1 创建一条数据的方式1： 实例化一个对象然后调用 save 方法
+const yuchi = new User({
+    userName: 'yuchi',
+    password: '123456',
+    nickName: '鱼翅'
+});
+
+yuchi.save();
+
+// 3.2 创建一条数据的方式2： 直接使用 create 类方法
+User.create({
+    userName: 'xiaoming',
+    password: '11111',
+    nickName: '小明'
+});
+
+// 4. 查看虚拟的数据库数据 
+console.log(DB);
+
+// 5. 通过属性生成的动态查询方法进行查询
+console.log(User.findByUserName('yuchi'));
+console.log(User.findByNickName('小明'));
+console.log(User.findByPassword('11111'));
+
+// 再创建一个
+class Book extends ActiveRecord { }
+
+Book.create({ name: '《我们的土地》', author: '[墨西哥] 卡洛斯·富恩特斯', pageTotal: '1036', price: '168', ISBN: '9787521211542' });
+Book.create({ name: '《戛纳往事》', author: '[法]吉尔·雅各布', pageTotal: '712', price: '148', ISBN: '9787308211208' });
+
+
+console.log('查询结果：', Book.findByName('《戛纳往事》'));
+console.log('查询结果：', Book.findByAuthor('[法]吉尔·雅各布'));
+console.log('查询结果：', Book.findByPageTotal('712'));
+console.log('查询结果：', Book.findByPrice('168'));
+console.log('查询结果：', Book.findByISBN('9787308211208'));
+```
+
+以下是`ActiveRecord`类的实现，它有如下细节：
+
+1. `ActiveRecord`是一个经过代理的类。
+2. 创建一个`ActiveRecord`类的子类，然后初始化，实际调用的是父类的构造函数，同时也会触发代理（注意`Proxy`里的代码，为了保证返回的对象依然是子类对象，手动修改了构造函数指向）。
+3. `ActiveRecord`类经过代理后，增加了动态查询类方法。
+4. `ActiveRecord`类的子类实例化后得到的也是一个经过代理的对象，代理中实现了一些实例方法。
 
 ```javascript
 // 定义基础的 ActiveRecord 抽象类，并支持动态的初始化实例属性
@@ -249,65 +307,5 @@ ActiveRecord.init = function (option) {
 module.exports = ActiveRecord;
 ```
 
-然后编写一点代码进行验证：
-
-```javascript
-const ActiveRecord = require('./ActiveRecord');
-
-// 1. 初始化一个数据源（模拟数据库）
-const DB = {};
-
-ActiveRecord.init({
-    db: DB,
-});
-
-class User extends ActiveRecord { // 2. 定义一个实体类
-}
-
-// 3.1 创建一条数据的方式1： 实例化一个对象然后调用 save 方法
-const yuchi = new User({
-    userName: 'yuchi',
-    password: '123456',
-    nickName: '鱼翅'
-});
-
-yuchi.save();
-
-// 3.2 创建一条数据的方式2： 直接使用 create 类方法
-User.create({
-    userName: 'xiaoming',
-    password: '11111',
-    nickName: '小明'
-});
-
-// 4. 查看虚拟的数据库数据 
-console.log(DB);
-
-// 5. 通过属性生成的动态查询方法进行查询
-console.log(User.findByUserName('yuchi'));
-console.log(User.findByNickName('小明'));
-console.log(User.findByPassword('11111'));
-
-// 再创建一个
-class Book extends ActiveRecord { }
-
-Book.create({ name: '《我们的土地》', author: '[墨西哥] 卡洛斯·富恩特斯', pageTotal: '1036', price: '168', ISBN: '9787521211542' });
-Book.create({ name: '《戛纳往事》', author: '[法]吉尔·雅各布', pageTotal: '712', price: '148', ISBN: '9787308211208' });
-
-
-console.log('查询结果：', Book.findByName('《戛纳往事》'));
-console.log('查询结果：', Book.findByAuthor('[法]吉尔·雅各布'));
-console.log('查询结果：', Book.findByPageTotal('712'));
-console.log('查询结果：', Book.findByPrice('168'));
-console.log('查询结果：', Book.findByISBN('9787308211208'));
-```
-
-至此我们就实现了基本的`ActiveRecord`类，它有如下细节：
-
-1. `ActiveRecord`是一个经过代理的类
-2. 创建一个`ActiveRecord`类的子类，然后初始化，实际调用的是父类的构造函数，同时也会触发代理（注意`Proxy`里的代码，为了保证返回的对象依然是子类对象，手动修改了其构造函数）
-3. `ActiveRecord`类经过代理后，增加了动态查询类方法
-4. `ActiveRecord`类的子类实例化后得到的是一个经过代理的对象，代理中实现了一些示例方法
-
-参考代码：
+代码：
 [yuchiXiong/activeRecordByProxy](https://github.com/yuchiXiong/activeRecordByProxy)
