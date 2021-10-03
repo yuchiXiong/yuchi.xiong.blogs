@@ -34,6 +34,8 @@
                 - [1.3 变量、作用域和内存问题](./技术/编程语言/javascript/JavaScript-3-变量、作用域和内存问题.md)
                 - [1.4 引用类型](./技术/编程语言/javascript/JavaScript-4-引用类型.md)
                 - [1.5 面向对象的程序设计](./技术/编程语言/javascript/JavaScript-5-面向对象的程序设计.md)
+            - 杂文
+                - [JavaScript元编程——基于Proxy实现active_record动态查找](./技术/编程语言/javascript/javascript元编程——基于Proxy实现active_record动态查找.md)
         - Ruby
             - 快速开始
                 - [Linux下如何安装Ruby](./技术/编程语言/ruby/Linux下如何安装Ruby.md)
