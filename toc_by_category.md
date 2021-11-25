@@ -1,0 +1,131 @@
+# blogs
+博文存档。
+
+## 目录
+
+排序方式： [时间](./README.md) | 分类
+
+- 技术
+    - 编程语言
+        - Java
+            - 开发工具（学习的过程主要使用的是 `Eclipse`，记录一些新手可能用得上的东西）
+                - [1.1 汉化](./技术/编程语言/java/1.1.汉化.md)
+                - [1.2 配置tomcat](./技术/编程语言/java/1.2.配置tomcat.md)
+                - [1.2.1 配置tomcat找不到sever选项的解决方案](./技术/编程语言/java/1.2.1.配置tomcat找不到sever选项的解决方案.md)
+                - [1.3 编码配置](./技术/编程语言/java/1.3.编码配置.md)
+            - [环境变量](./技术/编程语言/java/2.环境变量篇.md)
+            - 基础知识（语句变量等就不写了，从OO开始）
+                - [3.1 面向对象](./技术/编程语言/java/3.1.面向对象.md)
+                - [3.2 异常处理](./技术/编程语言/java/3.2.异常处理.md)
+                - [3.3 字符串的一点内容](./技术/编程语言/java/3.3.字符串的一点内容.md)
+                - [3.4 常用的工具类](./技术/编程语言/java/3.4.常用的工具类.md)
+            - JSP与Servlet
+                - [4.1 EL与JSTL](./技术/编程语言/java/4.1.EL与JSTL.md)
+                - [4.2 自定义JSP标签](./技术/编程语言/java/4.2.自定义JSP标签.md)
+                - [4.3 敲！撸一个自定义jsp标签！](./技术/编程语言/java/敲！撸一个自定义jsp标签！.md)
+            - Hibernate
+                - [Hibernate第二天](./技术/编程语言/java/Hibernate第二天.md)
+                - [Hibernate初体验](./技术/编程语言/java/Hibernate初体验.md)
+            - 设计模式
+                - [工厂模式](./技术/编程语言/java/设计模式（二）：工厂模式.md)
+                - [单例模式](./技术/编程语言/java/设计模式（一）：单例模式.md)
+        - JavaScript
+            - 基础
+                - [1.1 在HTML中使用JavaScript](./技术/编程语言/javascript/JavaScript-1-在HTML中使用JavaScript.md)
+                - [1.2 基本语法概念](./技术/编程语言/javascript/JavaScript-2-基本语法概念.md)
+                - [1.3 变量、作用域和内存问题](./技术/编程语言/javascript/JavaScript-3-变量、作用域和内存问题.md)
+                - [1.4 引用类型](./技术/编程语言/javascript/JavaScript-4-引用类型.md)
+                - [1.5 面向对象的程序设计](./技术/编程语言/javascript/JavaScript-5-面向对象的程序设计.md)
+            - 杂文
+                - [JavaScript元编程——基于Proxy实现active_record动态查找](./技术/编程语言/javascript/javascript元编程——基于Proxy实现active_record动态查找.md)
+        - Ruby
+            - 快速开始
+                - [Linux下如何安装Ruby](./技术/编程语言/ruby/Linux下如何安装Ruby.md)
+            - 基础
+                - [(TODO)Ruby中的数据类型](./技术/编程语言/ruby/Ruby中的数据类型.md)
+            - 折腾记录
+                - [node-rsa与ruby-openSSL的一点问题](./技术/编程语言/ruby/node-rsa与ruby-openSSL的一点问题.md)
+                - [(TODO)扒视频！Ruby爬虫初探](./技术/编程语言/ruby/扒视频！Ruby爬虫初探.md)
+    - 踩坑记录
+        - Git
+            - [git clone速度太慢](./技术/踩坑记录/git-clone速度太慢.md)
+        - Linux
+            - [Linux安装Android Studio](./技术/踩坑记录/Linux安装android-studio.md)
+            - [Linux实例服务器无法使用mstsc连接](./技术/踩坑记录/Linux实例服务器无法使用mstsc连接.md)
+            - [Linux下安装nodeJs](./技术/踩坑记录/Linux下安装nodeJs.md)
+        - NodeJs
+            - [node-sass提示找不到python的解决方案](./技术/踩坑记录/node-sass提示找不到python的解决方案.md)
+            - [一个项目从Linux迁移到Windows后找不到Python的问题](./技术/踩坑记录/项目从Linux迁移到Windows后找不到Python的问题.md)
+        - Java
+            - [PringStackTrace方法的一点碎碎念](./技术/踩坑记录/PringStackTrace方法的一点碎碎念.md)
+            - [一次马虎导致的Tomcat闪退…….md](./技术/踩坑记录/一次马虎导致的Tomcat闪退…….md)
+        - Ruby On Rails
+            - [RubyMine执行bin目录下指令无权限的解决方案](./技术/踩坑记录/RubyMine执行bin目录下指令无权限的解决方案.md)
+    - 框架 || 库学习
+        - React
+            - 状态管理
+                - Redux
+                    - [redux相关概念](./技术/框架学习/React/redux相关概念.md)
+                    - [redux-react](./技术/框架学习/React/redux-react.md)
+        - Ruby On Rails
+            - 环境搭建
+                - [这可能是最全最细节的rails环境搭建向导了(基于rvm)](./技术/框架学习/Rails/这可能是最全最细节的rails环境搭建向导了(基于rvm).md)
+            - 安全
+                - [Rails和HTTP 422那点事儿](/技术/框架学习/Rails/Rails和HTTP422那点事儿.md)
+                - [Rails使用puma带证书启动](/技术/框架学习/Rails/Rails使用puma带证书启动.md)
+            - 数据库
+                - MongoDB
+                    - [在Rails里使用MongoDB](/技术/框架学习/Rails/在Rails里使用MongoDB.md)
+                - MySQL
+                    - [Rails Migrate关于MySQL lock的一点问题](/技术/框架学习/Rails/Rails-Migrate关于MySQL-lock的一点问题.md)
+            - 其他
+                - [rails test等命令卡死常用的解决方案](/技术/框架学习/Rails/Rails-test等命令卡死常用的解决方案.md)
+            - 杂谈
+                - [从Rails视角看现代前端：换一种方式实现SPA](/技术/框架学习/Rails/从Rails视角看现代前端：换一种方式实现SPA.md)
+                - [在Rails中接入微信支付指北](/技术/框架学习/Rails/在Rails中接入微信支付指北.md)
+                - [在Rails上搭建React服务端渲染瞎谈](/技术/框架学习/Rails/在Rails上搭建React服务端渲染瞎谈.md)
+    - 垃圾教程
+        - 运维
+            - [云服务器：个人网站初体验](./技术/垃圾教程/云服务器：个人网站初体验.md)
+            - [(TODO)小团队无运维，网站宕机人不在？](./技术/垃圾教程/小团队无运维，网站宕机人不在？.md)
+            - [MongoDB配置](./技术/垃圾教程/MongoDB配置.md)
+            - [Nginx配置简单的反向代理](./技术/垃圾教程/Nginx配置简单的反向代理.md)
+            - [记一次百度云BOS踩坑](./技术/垃圾教程/记一次百度云BOS踩坑.md)
+        - Git
+            - [tortoiseGit-SSH公钥的配置](./技术/垃圾教程/tortoiseGit-SSH公钥的配置.md)
+        - 其他
+            - [随机获取到的高质量图片](./技术/垃圾教程/随机获取到的高质量图片.md)
+    - 脑洞很大
+        - 安全
+            - [关于浏览器那些蛋疼的东西](./技术/脑洞很大/关于浏览器那些蛋疼的东西.md)
+            - [关于 URL 传参的一点问题](./技术/脑洞很大/关于Url传参的一点问题.md)
+        - Java
+            - [简单的遍历文件路径](./技术/脑洞很大/简单的遍历文件路径.md)
+            - [Servlet  + JSP 实现验证码](./技术/脑洞很大/servlet+jsp实现验证码.md)
+    - 无聊合集
+        - BullShit聊天室
+            - [练手项目：BullShit聊天室（第二天）](./技术/无聊的很（做点小东西）/练手项目：BullShit聊天室（第二天）.md)
+            - [练手项目：BullShit聊天室（第一天）](./技术/无聊的很（做点小东西）/练手项目：BullShit聊天室（第一天）.md)
+        - 别踩白块儿
+            - [别踩白块儿总结](./技术/无聊的很（做点小东西）/别踩白块儿总结.md)
+            - [别踩白块儿HTML版的第二天](./技术/无聊的很（做点小东西）/别踩白块儿HTML版的第二天.md)
+            - [别踩白块儿HTML版的第一天](./技术/无聊的很（做点小东西）/别踩白块儿HTML版的第一天.md)
+    - 其它存档笔记
+- 设计
+    - antd
+        - [自然价值观](./设计/antd/自然价值观.md)
+        - [ant-design设计原则](./设计/antd/ant-design设计原则.md)
+            - [字体](./设计/antd/字体.md)
+            - [设计模式](./设计/antd/设计模式.md)
+                - [原则](./设计/antd/原则.md)
+                - [全局规则](./设计/antd/全局规则.md)
+                - [模板文档](./设计/antd/模板文档.md)
+        - [ant-motion动效设计](./设计/antd/ant-motion动效设计.md)
+            - [动效原则](./设计/antd/动效原则.md)
+            - [动效速度](./设计/antd/动效速度.md)
+            - [动效空间](./设计/antd/动效空间.md)
+            - [动效组合](./设计/antd/动效组合.md)
+            - [动效过渡](./设计/antd/动效过渡.md)
+- 杂文
+    - 书评
+        - [小强升职记-一本被名字耽搁的时间管理宝典](./杂文/小强升职记-一本被名字耽搁的时间管理宝典.md)
