@@ -86,11 +86,11 @@ module.exports={
 使用如上方法可以将指定的`js`文件注入进`html`文件中，以减少不必要的`http`请求。
 需要说明的是，尽管这个`js`是公有的，我们依然需要保证它存在于这个页面模板配置的`chunks`中，否则我们没有办法获取到它的`entry`值。
 到这一步我们会发现虽然这个公有的`js`文件被注入进了页面里，但`webpack`打包时依然把这个`js`文件使用`script`的方式加载进了页面里，所以我们在对页面进行渲染时需要首先进行一次判断，将这个公有的`js`文件筛选出来。
-~~~
-<%for(var key in htmlWebpackPlugin.files.chunks){%>
-        <%if(key!=='base'){%>
-            <script type="text/javascript" src="<%=JSON.stringify(htmlWebpackPlugin.files.chunks[key].entry)%>"></script>
-        <%}%>
+~~~js
+<% for(var key in htmlWebpackPlugin.files.chunks){ %>
+    <% if(key!=='base'){ %>
+        <script type="text/javascript" src="<%=JSON.stringify(htmlWebpackPlugin.files.chunks[key].entry)%>"></script>
     <%}%>
+<% } %>
 ~~~
 ##总结：其实这点东西一点也不多，看完了自己写也就这么一点点东西，`loader`等内容都还没有开始，但是理解起来还是需要一定的功夫，今天就写到这儿，明天再对`loader`进行学习。
