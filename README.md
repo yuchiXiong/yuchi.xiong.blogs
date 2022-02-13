@@ -4,7 +4,8 @@
 ## 目录
 
 排序方式： 时间 | [分类](./toc_by_category.md)
-
+- 2022/2
+    - [数据结构: 线性表](./技术/基础/数据结构/线性表.md)
 - 2021/10
     - [JavaScript元编程——基于Proxy实现active_record动态查找](./技术/编程语言/javascript/javascript元编程——基于Proxy实现active_record动态查找.md)
 - 2021/07
