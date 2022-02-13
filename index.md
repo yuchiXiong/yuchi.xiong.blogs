@@ -4,11 +4,12 @@
 ## 目录
 
 排序方式： 时间 | [分类](./toc_by_category.md)
-
+- 2022/2
+    - [数据结构: 线性表](./技术/基础/数据结构/线性表.md)
 - 2021/10
     - [JavaScript元编程——基于Proxy实现active_record动态查找](./技术/编程语言/javascript/javascript元编程——基于Proxy实现active_record动态查找.md)
 - 2021/07
-    - [从Rails视角看现代前端：换一种方式实现SPA](/技术/框架学习/Rails/从Rails视角看现代前端——换一种方式实现SPA.md)
+    - [从Rails视角看现代前端：换一种方式实现SPA](/技术/框架学习/Rails/从Rails视角看现代前端：换一种方式实现SPA.md)
 - 2020/12
     - [在Rails中接入微信支付指北](/技术/框架学习/Rails/在Rails中接入微信支付指北.md)
     - [在Rails上搭建React服务端渲染瞎谈](/技术/框架学习/Rails/在Rails上搭建React服务端渲染瞎谈.md)
