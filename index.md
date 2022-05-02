@@ -1,6 +1,3 @@
-# blogs
-博文存档。
-
 ## 目录
 
 排序方式： 时间 | [分类](./toc_by_category.md)
