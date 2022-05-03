@@ -1,5 +1,5 @@
 ---
-title: 练手项目：BullShit聊天室（第二天）
+title: 练手项目：BullShit 聊天室（第二天）
 date: 2018.10.17 15:30
 tags:
   - Java
@@ -7,7 +7,7 @@ categories:
   - 好饿，早知道不学编程了
 ---
 
-BullShit聊天室开发的第二天
+BullShit 聊天室开发的第二天
 
 昨天已经完成了聊天室的基本雏形，包括（显示消息，发送消息）两个主要功能。
 
@@ -56,7 +56,7 @@ function callBack() {
 
 ![添加好友.gif](./images/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-er-tian/1.webp)
 
-值得一提的是，因为类名一样，行为一样，结构一样，这里又遇到了之前[白块儿](https://www.jianshu.com/p/df57faa24e47)里对于事件解绑的问题，不过这次很快就解决了。
+值得一提的是，因为类名一样，行为一样，结构一样，这里又遇到了之前 [白块儿](https://www.jianshu.com/p/df57faa24e47) 里对于事件解绑的问题，不过这次很快就解决了。
 
 ~~~js
 $("#agree,#refused").click(function(){

@@ -1,10 +1,10 @@
 ---
-title: 这可能是最全最细节的rails环境搭建向导了(基于rvm)
+title: 这可能是最全最细节的 rails 环境搭建向导了 (基于 rvm)
 date: 2020-07-12 13:17:22
 tags: 
   - Ruby
 categories:
-  - 菜鸡的Ruby之旅
+  - 菜鸡的 Ruby 之旅
 ---
 ## 0. 写在前面
 
@@ -16,13 +16,13 @@ categories:
 
 ### 1.1 建议
 
-首先写在最前面的是：**不推荐将`rvm`安装在root用户下**。
+首先写在最前面的是：**不推荐将`rvm`安装在 root 用户下**。
 
->  本篇教程 **在未遇到不可抗力** 的情况下不需要使用`sudo`。然而显然这种概率极小……
+>  本篇教程**在未遇到不可抗力**的情况下不需要使用`sudo`。然而显然这种概率极小……
 
 ### 1.2 如何正确的卸载`rvm`
 
-对于一部分把`rvm`装在了`root`用户下且希望卸载并按照本教程继续，或者本来就是来看如何卸载的小伙伴，可以使用如下命令然后 **重启** 。
+对于一部分把`rvm`装在了`root`用户下且希望卸载并按照本教程继续，或者本来就是来看如何卸载的小伙伴，可以使用如下命令然后**重启**。
 
 ~~~ shell
 rvm implode
@@ -79,7 +79,7 @@ sudo apt-get install dirmngr
 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused
 ~~~
 
-你需要将`199.232.28.133 raw.githubusercontent.com`添加到hosts中，具体操作是这样的：
+你需要将`199.232.28.133 raw.githubusercontent.com`添加到 hosts 中，具体操作是这样的：
 
 ~~~ shell
 sudo vim /etc/hosts

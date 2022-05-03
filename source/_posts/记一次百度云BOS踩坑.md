@@ -1,5 +1,5 @@
 ---
-title: 记一次百度云BOS踩坑
+title: 记一次百度云 BOS 踩坑
 date: 2020-07-12 13:56:18
 tags:
   - 运维
@@ -8,7 +8,7 @@ categories:
 ---
 **问题描述**
 
-使用百度提供的STS获取bos临时授权时出现下面的错误：
+使用百度提供的 STS 获取 bos 临时授权时出现下面的错误：
 
 ~~~ shell
 Failed to open TCP connection to sts.bj.baidubce.com:80 (getaddrinfo: Temporary failure in name resolution)

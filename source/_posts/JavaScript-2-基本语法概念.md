@@ -1,11 +1,11 @@
 ---
-title: JavaScript(2)基本语法概念
+title: JavaScript(2) 基本语法概念
 date: 2020-05-23 14:58:15
 tags:
   - JavaScript
   - 前端
 categories:
-  - JavaScript高级程序设计
+  - JavaScript 高级程序设计
 ---
 # 1. 语法要点
 `JavaScript` 语法借鉴了 `C/Java` ，其语法主要有如下特征
@@ -30,7 +30,7 @@ alert(test());
 ~~~
 
 # 3. 数据类型
-`JavaScript` 中一共定义了5种基本数据类型，它们分别是：`Number`，`String`，`Boolean`，`Null`，`Undefined`。以及一种复杂数据类型 `Object` 。
+`JavaScript` 中一共定义了 5 种基本数据类型，它们分别是：`Number`，`String`，`Boolean`，`Null`，`Undefined`。以及一种复杂数据类型 `Object` 。
 
 ## 3.1. 如何判断一个变量的数据类型
 `JavaScript` 提供了 `typeof` 关键字来检测变量的数据类型。
@@ -51,7 +51,7 @@ console.log(typeof null);
 其输出结果却是 `object object`。
 
 > 有些时候，typeof 操作符会返回一些令人疑惑但技术上却正确的值。比如，调用 typeof null 会返回 "object"，因为特殊值 null 被认为是一个空的对象引用。
-> 《JavaScript高级程序设计》
+>《JavaScript 高级程序设计》
 
 ## 3.2. Undefined
 `Undefined` 类型的变量只有 `undefined` 一个值，当一个变量仅声明未赋初值时，它的值就是 `undefined`。
@@ -60,14 +60,14 @@ var msg;
 console.log(msg);
 ~~~
 如上代码输出 `undefined`。
-> 即便未初始化的变量会自动被赋予undefined值，但显式地初始化变量依然是明智的选择。如果能够做到这一点，那么当typeof操作符返回 "undefined" 值时，我们就知道被检测的变量还没有申明，而不是尚未初始化。
-> 《JavaScript高级程序设计》
+> 即便未初始化的变量会自动被赋予 undefined 值，但显式地初始化变量依然是明智的选择。如果能够做到这一点，那么当 typeof 操作符返回 "undefined" 值时，我们就知道被检测的变量还没有申明，而不是尚未初始化。
+>《JavaScript 高级程序设计》
 
 ## 3.3. Null
 `Null` 类型的变量和 `Undefined` 一样只有一个值那就是 `null` , `null` 变量存储的实际是一个空指针对象，也正是因为如此， `typeof null` 返回了 `"objcet"`。
 当使用 `==` 运算符在判断 `null` 和 `undefined` 时会返回 `true`，因为该操作符会发生隐式转换。
-> 只要意在保存对象的变量还没有真正保存对象，就应该明确地让该变量保存null值。这样做不仅可以体现null作为空对象的惯例，而且也有助于进一步区分null和undefined。
-> 《JavaScript高级程序设计》
+> 只要意在保存对象的变量还没有真正保存对象，就应该明确地让该变量保存 null 值。这样做不仅可以体现 null 作为空对象的惯例，而且也有助于进一步区分 null 和 undefined。
+>《JavaScript 高级程序设计》
 
 ## 3.4. Boolean
 `Boolean` 有两个值 `true` 和 `false` ，在 `JavaScript` 中，所有的类型都可以转化为 `Boolean` 值。
@@ -82,18 +82,18 @@ var messageBoolean = Boolean(message);
 
 ## 3.6. String
 ### 3.6.1 字符字面量
-字符字面量又叫转义序列，如果你接触过 `C/Java` 系列的格式化输出，就很容易理解，我们可以使用 `\n` 等字符来表示换行等特殊字符。但需要注意的一点是，一个字符字面量通常被解析为一个字符串，因此它的长度是1。
+字符字面量又叫转义序列，如果你接触过 `C/Java` 系列的格式化输出，就很容易理解，我们可以使用 `\n` 等字符来表示换行等特殊字符。但需要注意的一点是，一个字符字面量通常被解析为一个字符串，因此它的长度是 1。
 ~~~ JavaScript
 console.log('\n'.length);
 ~~~
-如上代码输出为1。
+如上代码输出为 1。
 
 ### 3.6.2 字符串的特性
 **字符串一旦被创建，将不可被更改**，如果要修改某个字符串变量的值，实际在后台是先创建了一个新的字符串，然后销毁旧的字符串。
 
 ### 3.6.3 将任意类型转换至字符串
-- toString()方法
-- String()构造方法
+- toString() 方法
+- String() 构造方法
 - 在该值后面追加空字符
 
 

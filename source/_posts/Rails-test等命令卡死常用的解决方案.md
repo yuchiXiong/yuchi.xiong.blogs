@@ -1,10 +1,10 @@
 ---
-title: Rails test等命令卡死常用的解决方案
+title: Rails test 等命令卡死常用的解决方案
 date: 2020-05-22 21:03:25
 tags:
   - Rails
 categories:
-  - Rails踩坑记录
+  - Rails 踩坑记录
 ---
 **问题描述**
 

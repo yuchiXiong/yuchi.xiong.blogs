@@ -1,5 +1,5 @@
 ---
-title: 项目从Linux迁移到Windows后找不到Python的问题
+title: 项目从 Linux 迁移到 Windows 后找不到 Python 的问题
 date:  2019.04.19 22:28:26
 tags:
   - 运维

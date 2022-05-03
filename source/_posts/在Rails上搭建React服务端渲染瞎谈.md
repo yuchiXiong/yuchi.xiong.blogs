@@ -1,14 +1,14 @@
 ---
-title: 在Rails上搭建React服务端渲染瞎谈
+title: 在 Rails 上搭建 React 服务端渲染瞎谈
 date: 2020-12-15 14:32:58
 tags:
   - Rails
   - MongoDB
 categories:
-  - Rails踩坑记录
+  - Rails 踩坑记录
 ---
 
-本文主要提供了一种在 `Rails` 里 `React` 搭建服务端渲染SPA的思路，主要涉及的技术栈如下：
+本文主要提供了一种在 `Rails` 里 `React` 搭建服务端渲染 SPA 的思路，主要涉及的技术栈如下：
 
 **ruby**:
 - [Rails 5.x ](https://ruby-china.github.io/rails-guides/)
@@ -21,7 +21,7 @@ categories:
 - [React-Redux](https://github.com/reduxjs/react-redux)
 
 
-## 1. 在 Rails 中搭建基本的SPA单页应用
+## 1. 在 Rails 中搭建基本的 SPA 单页应用
 
 我们将基于 `React` 搭建一个 `DEMO` ，它包含了两个页面 `home` 和 `about`，可以来回切换 。
 
@@ -174,7 +174,7 @@ gem 'mini_racer'
 需要注意一点，由于页面在被服务端被渲染，因而渲染脚本 `application.js` 不需要在页面渲染前加载了，我们可以将其位置进行调整：
 
 ```html
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html>
   <head>
     <title>MyBlog</title>
@@ -206,7 +206,7 @@ gem 'mini_racer'
 
 另一种可能是你希望在页面里使用 `react-router`，则此时仅仅开启 `prerender: true` 就不满足我们的需求了。
 
-## 3. 基于React-Rails的服务端渲染方案
+## 3. 基于 React-Rails 的服务端渲染方案
 
 当在应用中使用 `react-router` 时，我们需要调整应用架构。
 
@@ -245,7 +245,7 @@ export default props => {
 
 `location` 并不是一定要从 `props` 中获取，但这样做我们只需要在入口页上添加一个属性既可，相对来说更加的动态和方便：
 ```html
-# 位于app/views/blogs/index.html.erb的入口页
+# 位于 app/views/blogs/index.html.erb 的入口页
 <%= react_component 'routes', {path: request.path}, {prerender: true} %>
 ```
 
@@ -322,7 +322,7 @@ typof window === "undefined"
 暂时注释掉 `app/views/layouts/javascript.html.erb` 里，`body` 标签里的二次渲染脚本引入代码：
 
 ```html
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html>
   <head>
     <title>MyBlog</title>
@@ -399,7 +399,7 @@ export default props => {
 
 通过 `props.staticContext` 既可获取到对应的数据。
 
-> 解开入口页注释掉的渲染脚本外部链接，然后刷新页面，会发现该语句打印了两次，第一次是我们注入的数据，第二次是undefined。这也是服务端渲染与客户端渲染的差异之一。
+> 解开入口页注释掉的渲染脚本外部链接，然后刷新页面，会发现该语句打印了两次，第一次是我们注入的数据，第二次是 undefined。这也是服务端渲染与客户端渲染的差异之一。
 >
 > 但请注意 **不要通过 `props.staticContext` 来判断当前的渲染环境**，因为我们无法保证该变量里到底存储了什么，如果注入的数据本身就是 `false`，`null`之类的数据，那么 `if (props.staticContext) {}` 也许会得到错误的判断结果。
 >

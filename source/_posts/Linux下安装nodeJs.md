@@ -1,13 +1,13 @@
 ---
-title: Linux下安装NodeJs
+title: Linux 下安装 NodeJs
 date: 2019.05.10 22:15:58
 tags:
   - JavaScript
   - 前端
 categories:
-  - JavaScript高级程序设计
+  - JavaScript 高级程序设计
 ---
-不得不说`Linux`下坑确实多，使用`apt-get`安装的`NodeJS`是4.2.6版本的，而使用`nvm`又老是遇到问题
+不得不说`Linux`下坑确实多，使用`apt-get`安装的`NodeJS`是 4.2.6 版本的，而使用`nvm`又老是遇到问题
 
 ~~~bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash

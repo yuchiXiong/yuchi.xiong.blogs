@@ -1,17 +1,17 @@
 ---
-title: JavaScript元编程——基于Proxy实现active_record动态查找
+title: JavaScript 元编程——基于 Proxy 实现 active_record 动态查找
 date: 2021-10-03 09:07:26
 tags:
   - JavaScript
   - 前端
 categories:
-  - JavaScript高级程序设计
+  - JavaScript 高级程序设计
 ---
 ## 1. 元编程
 
-在网络上无意间看到《JavaScript权威指南》第七版的目录，除了`NodeJS`外，很意外的看到有一个章节叫元编程。
+在网络上无意间看到《JavaScript 权威指南》第七版的目录，除了`NodeJS`外，很意外的看到有一个章节叫元编程。
 
-第一次听说元编程这一概念还是来自于`Ruby`，《Ruby元编程》这本书，很遗憾的是这本书我只看了一点点……对于元编程，我所掌握的也就只有`Open Class`和`method_missing`而已了，不过本文也就只是使用了这么点简单的内容。
+第一次听说元编程这一概念还是来自于`Ruby`，《Ruby 元编程》这本书，很遗憾的是这本书我只看了一点点……对于元编程，我所掌握的也就只有`Open Class`和`method_missing`而已了，不过本文也就只是使用了这么点简单的内容。
 
 ### 1.1 Open Class
 在很多面向对象的语言里是无法修改一个类的，但在`Ruby`中如下代码是合法的：
@@ -46,7 +46,7 @@ end
 puts book.pure_name
 ~~~
 
-虽然重复定义了`Book`类，但后定义的`pure_name`方法被“加入”到了原有的类定义中。通过这种方式我们可以在任意位置对我们的代码进行扩展，这一技巧被称为`Monkey Patch`，以下是一个更实用一点的例子，我们打开了`Array`类。
+虽然重复定义了`Book`类，但后定义的`pure_name`方法被 “加入” 到了原有的类定义中。通过这种方式我们可以在任意位置对我们的代码进行扩展，这一技巧被称为`Monkey Patch`，以下是一个更实用一点的例子，我们打开了`Array`类。
 
 ```ruby
 # 通过 Open Class 为数组添加一个用于求平均值的方法
@@ -100,7 +100,7 @@ puts arr.average # 返回 5
 puts arr.to_binary # 返回数组元素转为二进制之后组成的数组
 ```
 
-## 2. 基于prototype和proxy尝试JavaScript元编程
+## 2. 基于 prototype 和 proxy 尝试 JavaScript 元编程
 
 我们知道`JavaScript`的类实际上是借由`prototype`实现的语法糖，利用`prototype`一样可以实现类似于上述的`Open Class`。
 
@@ -163,11 +163,11 @@ console.log(customArr.average());
 需要注意几点细节：
 
 1. 此处通过代理扩展的是**实例方法而非类方法**。
-2. 考虑到数组和对象都可以用字面量的方式完成初始化，打开`Array/Object`类的时候，或许`prototype`会更管用一些，因为**prototype修改的是原有的类而代理是创建新的类**。
+2. 考虑到数组和对象都可以用字面量的方式完成初始化，打开`Array/Object`类的时候，或许`prototype`会更管用一些，因为**prototype 修改的是原有的类而代理是创建新的类**。
 
 当然，完全可以将`average`方法直接放到`prototype`上，但如果我们要定义的是多个存在联系的方法，使用这种代理会灵活的多，关于这一点，接下来要尝试实现的`active_record`动态查找可能是一个不错的案例。
 
-## 3. 基于Proxy实现active_record动态查找
+## 3. 基于 Proxy 实现 active_record 动态查找
 
 `active_record`是`Ruby On Rails`中的`ORM`库，它有一个非常有用的魔法：假设存在一张数据表`users`，它有三个字段：
 
@@ -200,7 +200,7 @@ ActiveRecord.init({
 class User extends ActiveRecord { // 2. 定义一个实体类
 }
 
-// 3.1 创建一条数据的方式1： 实例化一个对象然后调用 save 方法
+// 3.1 创建一条数据的方式 1： 实例化一个对象然后调用 save 方法
 const yuchi = new User({
     userName: 'yuchi',
     password: '123456',
@@ -209,7 +209,7 @@ const yuchi = new User({
 
 yuchi.save();
 
-// 3.2 创建一条数据的方式2： 直接使用 create 类方法
+// 3.2 创建一条数据的方式 2： 直接使用 create 类方法
 User.create({
     userName: 'xiaoming',
     password: '11111',
@@ -228,11 +228,11 @@ console.log(User.findByPassword('11111'));
 class Book extends ActiveRecord { }
 
 Book.create({ name: '《我们的土地》', author: '[墨西哥] 卡洛斯·富恩特斯', pageTotal: '1036', price: '168', ISBN: '9787521211542' });
-Book.create({ name: '《戛纳往事》', author: '[法]吉尔·雅各布', pageTotal: '712', price: '148', ISBN: '9787308211208' });
+Book.create({ name: '《戛纳往事》', author: '[法] 吉尔·雅各布', pageTotal: '712', price: '148', ISBN: '9787308211208' });
 
 
 console.log('查询结果：', Book.findByName('《戛纳往事》'));
-console.log('查询结果：', Book.findByAuthor('[法]吉尔·雅各布'));
+console.log('查询结果：', Book.findByAuthor('[法] 吉尔·雅各布'));
 console.log('查询结果：', Book.findByPageTotal('712'));
 console.log('查询结果：', Book.findByPrice('168'));
 console.log('查询结果：', Book.findByISBN('9787308211208'));

@@ -1,5 +1,5 @@
 ---
-title: node-sass提示找不到python的解决方案
+title: node-sass 提示找不到 python 的解决方案
 date: 2020-07-12 14:05:42
 tags:
   - 前端

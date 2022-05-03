@@ -1,11 +1,11 @@
 ---
-title:  Linux安装Android Studio
+title:  Linux 安装 Android Studio
 date: 2019.06.08 22:08:14
 tags:
   - JavaScript
   - 前端
 categories:
-  - JavaScript高级程序设计
+  - JavaScript 高级程序设计
 ---
 不要问我为什么一会儿前端一会儿`Ruby`一会儿又`Android`，心里苦……
 
@@ -16,7 +16,7 @@ categories:
 
 另外`Oracle`下载`JDK`开始要求登陆了，不知是好消息还是坏消息。
 
-[Oracle官方下载JDK8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+[Oracle 官方下载 JDK8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 解压后修改`/etc/profile`文件如下
 ~~~bash
@@ -51,13 +51,13 @@ $ javac
 ## 2. 下载`Android Studio`
 到`Google`的`Android Development`页面下载`Android Studio`。
 
-[Google Android Studio下载页面](https://developer.android.google.cn/studio)
+[Google Android Studio 下载页面](https://developer.android.google.cn/studio)
 
-老规矩依然是下载解压然后使用`/AndroidStudio根目录/bin/studio.sh`启动`IDE`。
+老规矩依然是下载解压然后使用`/AndroidStudio 根目录/bin/studio.sh`启动`IDE`。
 
 在安装开始时你可能会遇到一条关于`proxy`的提示，这是需要配置代理，我使用下面这篇帖子的第一条配置完成修改进入`IDE`
 
-[android studio 配置HTTP proxy](https://www.cnblogs.com/pingxin/p/p00078.html)
+[android studio 配置 HTTP proxy](https://www.cnblogs.com/pingxin/p/p00078.html)
 
 
 ## 3. 使用`SDK Tools`
@@ -65,9 +65,9 @@ $ javac
 
 如果安装过程中提示了`SDK tools directory is missing...`（太长了忘记了。。。），则需要使用`SDK Tools`工具来进行`SDK`的安装，依然是这个页面，可以按`Ctrl + F`搜索`Command line tools only`找到对应的`Tools`工具并下载。
 
-[Google Android Studio下载页面](https://developer.android.google.cn/studio)
+[Google Android Studio 下载页面](https://developer.android.google.cn/studio)
 
-下载解压后使用`/tools根目录/bin/sdkmanager [package]`的方式安装`SDK`,使用`/tools根目录/bin/sdkmanager --list`可以查看当前能够安装的内容。我安装了如下内容，如果你看到这篇文章的时候请考虑是否要根据`--list`得到的列表安装最新的包。
+下载解压后使用`/tools 根目录/bin/sdkmanager [package]`的方式安装`SDK`,使用`/tools 根目录/bin/sdkmanager --list`可以查看当前能够安装的内容。我安装了如下内容，如果你看到这篇文章的时候请考虑是否要根据`--list`得到的列表安装最新的包。
 
 ~~~bash
 ./bin/sdkmanager "build-tools;29.0.0"
@@ -95,7 +95,7 @@ This is the Android Software Development Kit License Agreement
 
 安装完之后再次使用上面的方法启动`Andriod Studio`，来到我们熟悉的操蛋的`SDK Manager`界面，修改目录为解压的`tools`目录，如果你比较细心，你可能会发现你安装的包正是在这个目录下。
 
-安装前`IDE`会提示一些内容，这里我没法儿复原提示信息，但他大致上说的是`在当前目录检测到SDK，我们将只是安装缺少的SDK`，到这里几乎就代表着安装成功了
+安装前`IDE`会提示一些内容，这里我没法儿复原提示信息，但他大致上说的是`在当前目录检测到 SDK，我们将只是安装缺少的 SDK`，到这里几乎就代表着安装成功了
 
 ## 4. 一些我安装后遇到的问题
 
@@ -103,6 +103,6 @@ This is the Android Software Development Kit License Agreement
 在创建项目的界面右下角有一个`configure -> Create desktop Entry`即可= =！根本不要那些文章里的写文件。。。
 
 ### 4.2 其它
-这是`Unable to resolve dependency for ':app@debug/compileClasspath'`错误的解决方案，但需要注意的是，在如下帖子修改之后，再次启动IDE时也许会被询问`proxy`相关的内容，请在修改后检查你修改的文件是否发生变化，因为你的操作很有可能会覆盖调文章给出的解决方案。
+这是`Unable to resolve dependency for ':app@debug/compileClasspath'`错误的解决方案，但需要注意的是，在如下帖子修改之后，再次启动 IDE 时也许会被询问`proxy`相关的内容，请在修改后检查你修改的文件是否发生变化，因为你的操作很有可能会覆盖调文章给出的解决方案。
 
-[解决Unable to resolve dependency for ':app@debug/compileClasspath'](https://www.jianshu.com/p/0d0ebb86dd17?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=qq)
+[解决 Unable to resolve dependency for ':app@debug/compileClasspath'](https://www.jianshu.com/p/0d0ebb86dd17?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=qq)

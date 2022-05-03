@@ -1,15 +1,15 @@
 ---
-title: Rails Migrate关于MySQL Lock的一点问题
+title: Rails Migrate 关于 MySQL Lock 的一点问题
 date: 2020-05-22 21:34:12
 tags:
   - Rails
   - MySQL
 categories:
-  - Rails踩坑记录
+  - Rails 踩坑记录
 ---
 **问题描述**
 
-本周将数据由`PSQL`迁移到了`MySQL`，在迁移顺利进行之后，于周三进行了一个小规模的`BUG`修复，为修复数据表中的错误，增加了4个`migration`文件，运行如下指令:
+本周将数据由`PSQL`迁移到了`MySQL`，在迁移顺利进行之后，于周三进行了一个小规模的`BUG`修复，为修复数据表中的错误，增加了 4 个`migration`文件，运行如下指令:
 ~~~ shell
 RAILS_ENV=production rails db:migrate
 ~~~

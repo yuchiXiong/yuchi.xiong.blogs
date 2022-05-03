@@ -1,13 +1,13 @@
 ---
-title: JavaScript(4)引用类型
+title: JavaScript(4) 引用类型
 date: 2020-06-04 19:15:26
 tags:
   - JavaScript
   - 前端
 categories:
-  - JavaScript高级程序设计
+  - JavaScript 高级程序设计
 ---
-# 1. Object类型
+# 1. Object 类型
 创建一个对象有两种方式：
 ~~~ JavaScript
 # 构造函数
@@ -50,7 +50,7 @@ console.log(obj.name);
 两种方式都可以获取到 `name` 属性，但对于 `test attr` 属性而言，打点的方式将不可用，只能使用 `[]` 获取。
 值得一提的是，`[]` 方式可以使用变量来动态获取属性，但**除非必须使用变量来访问属性，否则我们建议使用点表示法**。
 
-# 2. Array类型
+# 2. Array 类型
 `Array` 用很多种创建方式：
 ~~~ JavaScript
 const colors = new Array();
@@ -69,14 +69,14 @@ const colors = [ 'あか', 'あお', 'しろ', ]
 ~~~ JavaScript
 const colors = [ , , , ,];
 ~~~
-## 2.1 Array的长度
+## 2.1 Array 的长度
 使用 `length` 可以获取数组的长度：
 ~~~ JavaScript
 const colors = [ 1, 2, 3, 4];
 
 console.log(colors.length);
 ~~~
-如上代码会输出4。
+如上代码会输出 4。
 有一点很有趣，修改一个 `Array` 的长度是允许的：
 ~~~ JavaScript
 const colors = [ 1, 2, 3, 4];
@@ -87,7 +87,7 @@ console.log(colors);
 colors.length = 3;
 console.log(colors);
 ~~~
-如上代码首先将 `colors` 数组的长度修改为10，`colors` 数组的后面被填充了6个 `undefined` ，而后我们又修改其长度为3，则 `colors` 数组从第3位（下标为2）开始都被截掉了。
+如上代码首先将 `colors` 数组的长度修改为 10，`colors` 数组的后面被填充了 6 个 `undefined` ，而后我们又修改其长度为 3，则 `colors` 数组从第 3 位（下标为 2）开始都被截掉了。
 
 ## 2.2 类型检测
 前面我提到过，使用 `typeof` 关键字测试数组类型会返回 `object`。
@@ -98,7 +98,7 @@ console.log(typeof []);
 ~~~ JavaScript
 console.log([] instanceof Array);
 ~~~
-这将返回 `true`。但这并不代表着问题解决了，事实上 `instanceof` 操作符在执行时会假设只有一个全局执行环境，如果页面中有两个以上的执行环境（如使用了 `iframe` 等场景），则会存在两个不同的 `Array` 构造函数，因而 `instanceof` 可能会返回一个错误的结论。为了解决这一问题，ES5新增的 `isArray()` 方法彻底解决了这个问题。
+这将返回 `true`。但这并不代表着问题解决了，事实上 `instanceof` 操作符在执行时会假设只有一个全局执行环境，如果页面中有两个以上的执行环境（如使用了 `iframe` 等场景），则会存在两个不同的 `Array` 构造函数，因而 `instanceof` 可能会返回一个错误的结论。为了解决这一问题，ES5 新增的 `isArray()` 方法彻底解决了这个问题。
 ~~~ JavaScript
 console.log(Array.isArray([]));
 ~~~
@@ -140,7 +140,7 @@ console.log(arr);
 如上代码分别打印 `4 [ 1, 2, 3, 4 ] [ 2, 3, 4 ]` 。
 
 ## 2.6 数组重排
-能够实现数组重排的方法有两个：`reverse()` 和 `sort()` ，但需要说明的是，这两个方法在比较元素大小的时候均使用 `ASCII` 码值，也就是说，元素10会小于元素2。
+能够实现数组重排的方法有两个：`reverse()` 和 `sort()` ，但需要说明的是，这两个方法在比较元素大小的时候均使用 `ASCII` 码值，也就是说，元素 10 会小于元素 2。
 ~~~ JavaScript
 const arr = [1, 2, 10, 4, 6]；
 arr.sort();
@@ -163,11 +163,11 @@ console.log([1,2,3].concat([5,6,7]));
 上述代码输出 `1, 2, 3, 5, 6, 7` 。
 
 ### 2.7.2 slice
-`slice` 方法用于截取数组中的指定片段，它接收两个参数，第一个参数为起始位置，当不传递第二个参数时，返回参数1至结尾的数组片段：
+`slice` 方法用于截取数组中的指定片段，它接收两个参数，第一个参数为起始位置，当不传递第二个参数时，返回参数 1 至结尾的数组片段：
 ~~~ JavaScript
 [1, 2, 3, 4, 5, 6].slice(2);
 ~~~
-上述代码返回下标2开始到结尾的所有元素组成的新数组。
+上述代码返回下标 2 开始到结尾的所有元素组成的新数组。
 当传递第二个参数时，则返回第一个参数到第二个参数范围内的元素组成的新数组：
 ~~~ JavaScript
 [1, 2, 3, 4, 5, 6].slice(2, 5);
@@ -187,13 +187,13 @@ console.log(arr);
 arr = [1, 2, 3, 4, 5, 6];
 arr.splice(2, 0, 8);
 
-// 替换下标为2的项目
+// 替换下标为 2 的项目
 arr = [1, 2, 3, 4, 5, 6];
 arr.splice(2, 1, 8);
 ~~~
 
 ### 2.7.4 位置方法
-查找数组中元素的位置可以使用 `indexOf()` 和 `lastIndexOf()` 方法，这个两个方法都接收两个参数，参数1是要查找的元素，参数二为开始查找的起始位置，区别在于 `indexOf()` 从前往后查找，而 `lastIndexOf()` 从后往前查找。当两个方法找到指定的元素时，它们会返回元素的下标，反之返回-1.
+查找数组中元素的位置可以使用 `indexOf()` 和 `lastIndexOf()` 方法，这个两个方法都接收两个参数，参数 1 是要查找的元素，参数二为开始查找的起始位置，区别在于 `indexOf()` 从前往后查找，而 `lastIndexOf()` 从后往前查找。当两个方法找到指定的元素时，它们会返回元素的下标，反之返回-1.
 ~~~ JavaScript
 const arr = [ 1, 2, 3, 4, 5];
 
@@ -203,10 +203,10 @@ console.log(arr.indexOf(1));
 // 从第二项开始查找元素 1 的位置，返回 -1
 console.log(arr.indexOf(1, 2));
 
-// 从后往前查找元素 1 的位置，返回0
+// 从后往前查找元素 1 的位置，返回 0
 console.log(arr.lastIndexOf(1));
 
-// 从倒是第一项开始查找元素 1 的位置，返回0
+// 从倒是第一项开始查找元素 1 的位置，返回 0
 console.log(arr.lastIndexOf(1, 1));
 ~~~
 
@@ -221,10 +221,10 @@ console.log(arr.lastIndexOf(1, 1));
 ## 2.9 归并方法
 归并方法主要是将上一次执行的结果做为下一次执行函数的参数，可以使用 `reduce()` 方法和 `reduceRight()` 方法。其中 `reduce()` 方法从项目的第一项开始而 `reduceRight()` 从项目的最后一项开始。
 
-# 3. Date类型
+# 3. Date 类型
 就像它的名字一样，`Date` 类型用于创建日期数据，`Date` 类型的 `valueOf()` 方法会返回该时间对应的毫秒数。
 
-# 4. Function类型
+# 4. Function 类型
 声明一个函数可以使用如下方式：
 ~~~ JavaScript
 function fun1 () {
@@ -264,7 +264,7 @@ function fun1 (num1, num2, num3) {
     console.log(arguments);
 }
 
-// 输出结果为3
+// 输出结果为 3
 console.log(fun1.length);
 ~~~
 每个函数都有两个方法 `apply` 和 `call` ，它们都可以为函数绑定 `this`，不过 `call` 的参数需要一一列举，而 `apply` 可以直接传递参数表。

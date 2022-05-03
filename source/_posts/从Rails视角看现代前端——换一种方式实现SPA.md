@@ -1,5 +1,5 @@
 ---
-title: 从Rails视角看现代前端——换一种方式实现SPA
+title: 从 Rails 视角看现代前端——换一种方式实现 SPA
 date: 2021.07.08 20:25
 tags:
   - 前端
@@ -49,7 +49,7 @@ categories:
 
 ---
 
-# MVC下的前端开发是什么样子？
+# MVC 下的前端开发是什么样子？
 相信说到 `MVC` 架构下的前端开发，不少经验丰富的前端工程师会有一些久远的回忆，一些刻板印象涌上心头：
 1. 开发时 `HTML` 与服务端语言混编。
 2. 稍微复杂的需求需要编写大量 `DOM` 操作来实现。
@@ -96,9 +96,9 @@ categories:
 
 简单看一下通过 `AJAX` 改造前后的页面跳转效果
 
-![不使用ajax时的页面跳转](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/4.webp)
+![不使用 ajax 时的页面跳转](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/4.webp)
 
-![使用ajax时的页面跳转](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/5.webp) 
+![使用 ajax 时的页面跳转](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/5.webp) 
 
 但 `AJAX` 的引入并不是没有代价的，完全依靠 `AJAX` 来动态更新的数据没有办法获得 `SEO` 的支持。同时使用 `AJAX` 意味着需要编写些许的 `JavaScript` 代码来完成 `DOM` 节点的更新操作。另一个更复杂的问题在于，当我们期望通过 `AJAX` 来完成整个应用的无刷新换页、提交时，意味着我们有大量的 `HTML` 会在 `JavaScript` 中动态的插入，即由此来完成页面的局部刷新。此时，代码的可维护性大大的降低，最终化为一头失控的猛兽。  
 
@@ -106,7 +106,7 @@ categories:
 
 ---
 
-# Turbolinks：PJAX的魔法
+# Turbolinks：PJAX 的魔法
 `Rails` 在 4.0 版本默认引入了一个扩展—— `Turbolinks`。
 
 `Turbolinks` 是一个轻量，但略带侵略性的 `JavaScript` 库。关于它的一切，其实要从更早的一项技术说起——`PJAX`.
@@ -145,7 +145,7 @@ $(document).pjax('a', '#pjax-container');
 1. 在页面加载完成后，通过 `Node.cloneNode()` 来缓存页面，使得在网络断开期间也能访问已经缓存的页面。
 2. 在 `Turbolinks` 换页期间维护了一个内部的进度条用来向用户展示 `loading` 状态，与其它的特性相同，它不需要用户编写任何额外的代码。
 
-![turbolinks换页](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/6.webp)
+![turbolinks 换页](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/6.webp)
 
 观察上图，注意几个细节：
 1. 点击链接时，浏览器并没有刷新。
@@ -241,7 +241,7 @@ document.addEventListener("turbolinks:load", function() {
 let form = document.querySelector("form");
 form.onsubmit = function (e) {
     e.preventDefault();
-    //阻止submit默认提交行为
+    //阻止 submit 默认提交行为
     let fd = new FormData(form); 
     fd.append('userId', '1008611');
 

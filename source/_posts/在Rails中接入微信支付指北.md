@@ -1,21 +1,21 @@
 ---
-title: 在Rails中接入微信支付指北
+title: 在 Rails 中接入微信支付指北
 date: 2020-12-28 02:57:35
 tags:
   - Rails
   - MongoDB
 categories:
-  - Rails踩坑记录
+  - Rails 踩坑记录
 ---
 
 # 0. 写在前面
 其实公司项目早在去年就做完第一版的微信支付了，但是由于种种原因并没有上线，一直拖到了今年。
 
-让人 *疼 的一件事情是，虽然基础功能都已经实现了，代码也有了，但是考虑微信支付更新了V3版本，以及反正产品还没有正式上微信支付，公司最终决定直接接入V3版本的微信支付，之前的代码基本上没法儿再用了。
+让人 * 疼 的一件事情是，虽然基础功能都已经实现了，代码也有了，但是考虑微信支付更新了 V3 版本，以及反正产品还没有正式上微信支付，公司最终决定直接接入 V3 版本的微信支付，之前的代码基本上没法儿再用了。
 
-另外 `Ruby` 这个没人疼没人爱的孩子又着实可怜的不行，V2版本的微信支付还可以参考使用社区姜老师(`@jasl`)的 [微信支付GEM](https://github.com/jasl/wx_pay)，V3版本干脆就没有可以参考的 `Ruby` 代码了。
+另外 `Ruby` 这个没人疼没人爱的孩子又着实可怜的不行，V2 版本的微信支付还可以参考使用社区姜老师 (`@jasl`) 的 [微信支付 GEM](https://github.com/jasl/wx_pay)，V3 版本干脆就没有可以参考的 `Ruby` 代码了。
 
-好就好在V3开始的微信支付相对之前的V2要简单许多，以及相关的文档也比较完整，本文主要提供一些代码参考，以及分享一些接入途中遇到的坑。
+好就好在 V3 开始的微信支付相对之前的 V2 要简单许多，以及相关的文档也比较完整，本文主要提供一些代码参考，以及分享一些接入途中遇到的坑。
 
 # 1. 需要准备什么？
 接入云服务通常来说都需要准备一系列的各种 `公钥 私钥 证书 APPID APPSECRET` 等乱七八糟的东西，此处进行简单的列举，详细的申请步骤可以参考 [《微信支付接入前准备》](https://pay.weixin.qq.com/wiki/doc/apiv3/open/pay/chapter2_1.shtml) 一文，相对来说已经描述的比较清晰了。
@@ -23,7 +23,7 @@ categories:
 直接放代码：
 
 ```ruby
-# 在申请微信支付时由平台分配的开发者ID
+# 在申请微信支付时由平台分配的开发者 ID
 APPID = Rails.application.credentials[:wx_pay][:appid]
 
 # 在申请微信支付时的收款账号
@@ -52,7 +52,7 @@ require 'openssl'
 puts OpenSSL::X509::Certificate.new(open(your_cert_file_path).read).serial.to_s(16)
 ```
 
-> 注意此处 `OpenSSL::X509::Certificate#serial.to_s` 得到的是一个十进制的值，而微信支付方统一使用的是十六进制的，因此我们传递了参数将其转为16进制。
+> 注意此处 `OpenSSL::X509::Certificate#serial.to_s` 得到的是一个十进制的值，而微信支付方统一使用的是十六进制的，因此我们传递了参数将其转为 16 进制。
 
 由于证书会放在服务器上，该序列号是不会变更的，所以可以直接写入 `credentials` 里
 
@@ -117,7 +117,7 @@ end
 ![图片](https://assets-blog-xiongyuchi.oss-cn-beijing.aliyuncs.com/uploads/production/blog_photos/48/1609126710-image.png)
 
 # 3. 封装请求
-完成签名后我们可以开始尝试接入微信支付的相关API了，按照以往的惯例我们会把这些请求做一个简单的封装，例如统一下单接口（代码写的有点丑，别打我_(:з」∠)_）：
+完成签名后我们可以开始尝试接入微信支付的相关 API 了，按照以往的惯例我们会把这些请求做一个简单的封装，例如统一下单接口（代码写的有点丑，别打我_(:з」∠)_）：
 
 ```ruby
 class Service
@@ -127,7 +127,7 @@ class Service
   MCHID = Rails.application.credentials[:wx_pay][:mch_id]
   SERIAL_NO = Rails.application.credentials[:wx_pay][:serial_no]
 
-  # * app支付接口
+  # * app 支付接口
   def self.transactions_app(order_info)
   
     # * 构造请求参数
@@ -184,7 +184,7 @@ end
 微信支付对证书加密使用的是 `AEAD_AES_256_GCM` 加密算法，虽然在 `Ruby` 文档中找到了对应的标准库方法，但其实现细节似乎与微信支付给出的参数有些区别导致没有解密成功。
 
 > 解释：
-> 在[标准库文档](https://ruby-doc.org/stdlib-3.0.0/libdoc/openssl/rdoc/OpenSSL/Cipher.html)中，找到了 `AES-128-GCM` 相关内容：
+> 在 [标准库文档](https://ruby-doc.org/stdlib-3.0.0/libdoc/openssl/rdoc/OpenSSL/Cipher.html) 中，找到了 `AES-128-GCM` 相关内容：
 > ![图片](https://assets-blog-xiongyuchi.oss-cn-beijing.aliyuncs.com/uploads/production/blog_photos/48/1609135747-image.png)
 > 但让人疑惑的是微信支付返回的参数中的并没有解密需要的 `auth_tag` 。
 > 如果有了解 `AEAD` 算法的朋友麻烦在评论区赐教解释一下_(:з」∠)_
@@ -214,7 +214,7 @@ end
 ```ruby
 def fetch(serial)
 
-  # 1. 通过serial序列号查找本地是否存在响应的证书，如果有，将证书实例返回
+  # 1. 通过 serial 序列号查找本地是否存在响应的证书，如果有，将证书实例返回
   ... 
   return OpenSSL::X509::Certificate.new(open(cert_file_name).read) if File.exists? cert_file_name
 
@@ -246,7 +246,7 @@ end
 - 解密响应报文，获取响应数据
 - 验证订单数据
 
-此处有一个不得不提的坑是在验证签名时应使用 **请求报文的原文** ，在 `Rails` 中可以通过如下方法获取：
+此处有一个不得不提的坑是在验证签名时应使用**请求报文的原文**，在 `Rails` 中可以通过如下方法获取：
 
 ```ruby
 request.raw_post
@@ -330,6 +330,6 @@ end
 
 # 6. 结语
 
-至此我们就完成了基础的微信支付中所涉及到的大部分问题，个人感觉微信支付升级到V3之后确实要简单了不少。~~即便如此每次接入一个新的云服务的时候都感觉是被按在地上补密码学……~~
+至此我们就完成了基础的微信支付中所涉及到的大部分问题，个人感觉微信支付升级到 V3 之后确实要简单了不少。~~即便如此每次接入一个新的云服务的时候都感觉是被按在地上补密码学……~~
 
 对于文中的叙述有不同意见可以在评论区与我讨论，如果觉得这篇文章对您有用不妨给我一个赞~最后祝大家都能光速接入微信支付。

@@ -1,10 +1,10 @@
 ---
-title: Rails使用puma带证书启动
+title: Rails 使用 puma 带证书启动
 date: 2020-05-22 21:22:02
 tags:
   - Rails
 categories:
-  - Rails踩坑记录
+  - Rails 踩坑记录
 ---
 **问题描述**
 

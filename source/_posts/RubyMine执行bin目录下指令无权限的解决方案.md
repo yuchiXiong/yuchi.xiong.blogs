@@ -1,10 +1,10 @@
 ---
-title: RubyMine执行bin目录下指令无权限的解决方案
+title: RubyMine 执行 bin 目录下指令无权限的解决方案
 date: 2020-05-22 21:15:04
 tags:
   - Linux
 categories:
-  - Rails踩坑记录
+  - Rails 踩坑记录
 ---
 **问题描述**
 

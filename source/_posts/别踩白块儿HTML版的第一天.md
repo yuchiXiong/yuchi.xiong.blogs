@@ -1,5 +1,5 @@
 ---
-title: 别踩白块儿HTML版的第一天
+title: 别踩白块儿 HTML 版的第一天
 date: 2018.09.02 22:54
 tags:
   - 前端
@@ -9,29 +9,29 @@ categories:
 开始了一个非常有意思的小作业：别踩白块儿。
 
 一开始学前端的时候就已经想到了可以尝试一下，今天是终于开始了。
-首先确定的是思路，页面只有3个按钮：
+首先确定的是思路，页面只有 3 个按钮：
 - 开始游戏
 - 游戏排名
 - 作者信息
 
-其中游戏排名思路比较明确，使用JSP+mysql来完成即可。
+其中游戏排名思路比较明确，使用 JSP+mysql 来完成即可。
 
-其次是开始游戏，游戏开始，黑白快开始往下落，黑白块用div制作。
+其次是开始游戏，游戏开始，黑白快开始往下落，黑白块用 div 制作。
 
-关于黑块，需要说明的是，黑块是随机生成的，因此我用了`Math.random（）`方法生成了0-3共4个数，并利用父子节点的关系随机给一个白块替换样式。这样就完成了黑块的随机生成。
+关于黑块，需要说明的是，黑块是随机生成的，因此我用了`Math.random（）`方法生成了 0-3 共 4 个数，并利用父子节点的关系随机给一个白块替换样式。这样就完成了黑块的随机生成。
 ~~~js
 var FirstContainer = $(".block_container")[0];
 var index_block = $(FirstContainer).children()[black_index];
 $(index_block).addClass("black_block");
 $(index_block).removeClass("white_block");
-// 自动添加div
+// 自动添加 div
 $("<div class='block_container'><div class='white_block'></div><div class='white_block'></div><div class='white_block'></div><div class='white_block'></div></div>").prependTo(".GameFream");  
 ~~~
 
-接下来要实现的是往下滚动，我使用了`prependTo（）`方法往容器里插入div，并且设置了定时器，这样游戏启动之后便可以一直生成新的div块，整个游戏的动态效果差不多有了。
+接下来要实现的是往下滚动，我使用了`prependTo（）`方法往容器里插入 div，并且设置了定时器，这样游戏启动之后便可以一直生成新的 div 块，整个游戏的动态效果差不多有了。
 
 ~~~js
-// 自动添加div
+// 自动添加 div
 $("<div class='block_container'><div class='white_block'></div><div class='white_block'></div><div class='white_block'></div><div class='white_block'></div></div>").prependTo(".GameFream");  
 ~~~
 

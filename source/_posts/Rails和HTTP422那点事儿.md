@@ -1,10 +1,10 @@
 ---
-title: Rails和HTTP422那点事儿
+title: Rails 和 HTTP422 那点事儿
 date: 2020-05-22 20:37:00
 tags: 
   - Rails
 categories:
-  - Rails踩坑记录
+  - Rails 踩坑记录
 ---
 
 **问题描述**
@@ -55,4 +55,4 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-**但仍需要注意一点是，token的存储问题是值得考虑的，存储在cookie中则依然无法避免CSRF漏洞，反之如果存储在LocalStorage中，则需要留意XSS攻击的防御。**
+**但仍需要注意一点是，token 的存储问题是值得考虑的，存储在 cookie 中则依然无法避免 CSRF 漏洞，反之如果存储在 LocalStorage 中，则需要留意 XSS 攻击的防御。**

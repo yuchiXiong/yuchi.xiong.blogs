@@ -1,11 +1,11 @@
 ---
-title: JavaScript(5)面向对象的程序设计
+title: JavaScript(5) 面向对象的程序设计
 date: 2020-06-08 20:48:27
 tags:
   - JavaScript
   - 前端
 categories:
-  - JavaScript高级程序设计
+  - JavaScript 高级程序设计
 ---
 # 1. 对象
 创建一个对象很简单，我们可以很轻松的为其添加属性和方法。属性在创建时都会有一些特性值，它们定义了属性的行为。
@@ -14,7 +14,7 @@ categories:
 在 `JavaScript` 中属性被分为两种：数据属性和访问器属性。
 
 ### 1.1.1 数据属性
-数据属性中包含了数据值的位置，这个位置可以写入和读取值，它有4个特性：
+数据属性中包含了数据值的位置，这个位置可以写入和读取值，它有 4 个特性：
 - `[[Configurable]]`：是否可以被 `delete` 删除属性，是否可以修改属性，是否可以将属性修改为访问器属性等。它的默认值是 `true` 。
 - `[[Enumerable]]`：是否可以被 `for-in` 循环返回属性，它的默认值是 `true` 。
 - `[[Writeable]]`：是否可以修改该属性的值，默认值为 `true` 。
@@ -35,7 +35,7 @@ console.log(obj.name);
 上述规则同样适用于 'configurable` 特性，但需要注意一点，一旦将一个属性设置为 `configurable: false`， 就不可以再将其设置为 `configurable: true` 了，此时再使用 `Object.defineProperty()` 方法仅能修改 `writable` 属性。
 
 ### 1.1.2 访问器属性
-访问器属性与数据属性的区别在于它不包含数据值，但它包含一对 `getter/setter` 函数。当访问一个属性的时候，会触发该属性的 `getter` 函数，当修改一个属性的时候，会触发该属性的 `setter` 函数。与数据属性相似，它也有4个属性：
+访问器属性与数据属性的区别在于它不包含数据值，但它包含一对 `getter/setter` 函数。当访问一个属性的时候，会触发该属性的 `getter` 函数，当修改一个属性的时候，会触发该属性的 `setter` 函数。与数据属性相似，它也有 4 个属性：
 - `[[Configurable]]`：是否可以被 `delete` 删除属性，是否可以修改属性，是否可以将属性修改为访问器属性等。它的默认值是 `true` 。
 - `[[Enumerable]]`：是否可以被 `for-in` 循环返回属性，它的默认值是 `true` 。
 - `[[Get]]`：读取时调用的函数。
@@ -136,7 +136,7 @@ function Person(name, age, job) {
 }
 var person1 = new Person('yuchi', 18, 'api caller');
 ~~~
-上述代码我们定义了 `Person` 构造函数，要使用它来创建新实例，我们必须使用 `new` 操作符。创建一个对象会经历如下4个步骤：
+上述代码我们定义了 `Person` 构造函数，要使用它来创建新实例，我们必须使用 `new` 操作符。创建一个对象会经历如下 4 个步骤：
 1. 创建一个对象。
 2. 将构造函数的作用域赋给新的对象。
 3. 执行构造函数里的代码。
@@ -203,7 +203,7 @@ Person.prototype.name = 'yuchi';
 
 var person1 = new Person();
 
-// 输出yuchi
+// 输出 yuchi
 console.log(person1.name);
 
 person1.name = 'lala';
@@ -211,21 +211,21 @@ person1.name = 'lala';
 console.log(person1.name);
 
 person1.name = null
-// 输出null
+// 输出 null
 console.log(person1.name);
 
 delete person1.name;
-// 输出yuchi
+// 输出 yuchi
 console.log(person1.name);
 ~~~
 我们可以使用 `hasOwnProperty` 方法来判断一个属性究竟在实例上还是原型对象上。
 ~~~ JavaScript
-// 结果为false
+// 结果为 false
 person1.hasOwnProperty('name');
 ~~~
 由于 `hasOwnProperty` 只能判断属性是否在实例上，当我们需要判断一个属性是否存在与原型上时，可以将它与 `in` 操作符配合起来使用。`in` 操作符仅在属性可以访问时返回 `true` 而不会关心属性在实例上还是原型上。因此，当使用 `in` 操作符时返回 `true` 而 `hasOwnProperty` 返回 `false` 时，就可以认为该属性位于原型对象。
 ~~~JavaScript
-!person1.hasOwnProperty('name') && ('name' in person1);
+! person1.hasOwnProperty('name') && ('name' in person1);
 ~~~
 当我们有大量的属性与方法需要添加到原型对象上时，可以使用字面量的语法来减少 `Person.prototype` 的键入：
 ~~~JavaScript

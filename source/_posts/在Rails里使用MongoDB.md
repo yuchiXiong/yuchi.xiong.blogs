@@ -1,14 +1,14 @@
 ---
-title: 在Rails里使用MongoDB
+title: 在 Rails 里使用 MongoDB
 date: 2020-06-21 16:23:50
 tags:
   - Rails
   - MongoDB
 categories:
-  - Rails踩坑记录
+  - Rails 踩坑记录
 ---
 ## 1. 写在前面
-我逛`ruby china`的时候发现很多前辈12年左右就开始用`Rails + MongoDB`的组合了，但当我终于有一天要用到时候居然没有找到一篇教程= =！
+我逛`ruby china`的时候发现很多前辈 12 年左右就开始用`Rails + MongoDB`的组合了，但当我终于有一天要用到时候居然没有找到一篇教程= =！
 
 我本来以为就和之前把`PostgreSQL`替换成`MySQL`差不多，装个驱动，然后`database.yml`配置改一下就可以用了，结果发现`Active Record`居然没支持`MongoDB`……
 
