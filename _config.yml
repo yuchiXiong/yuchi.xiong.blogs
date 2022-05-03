@@ -3,13 +3,30 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: 鱼翅
 description: ''
 keywords:
-author: John Doe
-language: en
+author: yuchiXiong
+language: cn
 timezone: ''
+
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -28,7 +45,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: "_posts/一些旧的博文归档和待整理文档/**/*"
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -97,7 +114,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: cactus-white
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
