@@ -122,3 +122,26 @@ deploy:
   type: git
   repo: git@github.com:yuchiXiong/yuchi.xiong.blogs.git
   branch: gh-pages
+
+clean_css:
+  exclude: 
+    - '*.min.css'
+
+uglify:
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'
+
+html_minifier:  
+  collapseBooleanAttributes: true
+  collapseWhitespace: true
+  # Ignore '<!-- more -->' https://hexo.io/docs/tag-plugins#Post-Excerpt
+  ignoreCustomComments: [ !!js/regexp /^\s*more/]
+  removeComments: true
+  removeEmptyAttributes: true
+  removeScriptTypeAttributes: true
+  removeStyleLinkTypeAttributes: true
+  minifyJS: true
+  minifyCSS: true
