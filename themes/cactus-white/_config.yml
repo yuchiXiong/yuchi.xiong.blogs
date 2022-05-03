@@ -1,8 +1,8 @@
 nav:
-  # home: /
-  about: /about/
+  Home: /
+  Tags: /tags/
+  About: /about/
   Writing: /
-  Archive: /archive/
 
 customize:
     gravatar:
@@ -36,7 +36,7 @@ rss: atom.xml
 # Plugins
 plugins:
     disqus_shortname: # Disqus Comments Shortname
-    google_analytics: UA-37473492-6 # enter the tracking ID for your Google Analytics
+    # google_analytics: UA-37473492-6 # enter the tracking ID for your Google Analytics
 
 # Miscellaneous
 miscellaneous:
