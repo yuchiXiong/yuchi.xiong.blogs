@@ -6,7 +6,8 @@
 title: 鱼翅
 description: ''
 keywords:
-author: yuchiXiong
+author: yuchiXiong 
+copyright: 鄂ICP备18022630号-1
 language: cn
 timezone: ''
 
@@ -16,7 +17,7 @@ feed:
   path: atom.xml
   limit: 0
   hub:
-  content:
+  content: true
   content_limit_delim: ' '
   order_by: -date
   icon: icon.png
