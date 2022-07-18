@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>鱼翅</title>
+  <icon>https://xiongyuchi.top/icon.png</icon>
+  
+  <link href="https://xiongyuchi.top/atom.xml" rel="self"/>
+  
+  <link href="https://xiongyuchi.top/"/>
+  <updated>2022-07-18T06:02:45.914Z</updated>
+  <id>https://xiongyuchi.top/</id>
+  
+  <author>
+    <name>yuchiXiong</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据结构： 线性表</title>
+    <link href="https://xiongyuchi.top/2022/02/13/xian-xing-biao/"/>
+    <id>https://xiongyuchi.top/2022/02/13/xian-xing-biao/</id>
+    <published>2022-02-13T10:43:19.000Z</published>
+    <updated>2022-07-18T06:02:45.914Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言（啰嗦两句）&quot;&gt;&lt;a href=&quot;#前言（啰嗦两句）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="好饿，早知道不学编程了" scheme="https://xiongyuchi.top/categories/%E5%A5%BD%E9%A5%BF%EF%BC%8C%E6%97%A9%E7%9F%A5%E9%81%93%E4%B8%8D%E5%AD%A6%E7%BC%96%E7%A8%8B%E4%BA%86/"/>
+    
+    
+    <category term="c" scheme="https://xiongyuchi.top/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 元编程——基于 Proxy 实现 active_record 动态查找</title>
+    <link href="https://xiongyuchi.top/2021/10/03/javascript-yuan-bian-cheng-ji-yu-proxy-shi-xian-active-record-dong-tai-cha-zhao/"/>
+    <id>https://xiongyuchi.top/2021/10/03/javascript-yuan-bian-cheng-ji-yu-proxy-shi-xian-active-record-dong-tai-cha-zhao/</id>
+    <published>2021-10-03T01:07:26.000Z</published>
+    <updated>2022-07-18T06:01:03.633Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-元编程&quot;&gt;&lt;a href=&quot;#1-元编程&quot; class=&quot;headerlink&quot; title=&quot;1. 元编程&quot;&gt;&lt;/a&gt;1. 元编程&lt;/h2&gt;&lt;p&gt;在网络上无意间看到《JavaScript</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从 Rails 视角看现代前端——换一种方式实现 SPA</title>
+    <link href="https://xiongyuchi.top/2021/07/08/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/"/>
+    <id>https://xiongyuchi.top/2021/07/08/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/</id>
+    <published>2021-07-08T12:25:00.000Z</published>
+    <updated>2022-07-18T06:01:03.666Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;其实想写这篇文很久了……&lt;/p&gt;
+&lt;p&gt;从毕业实习接触 &lt;code&gt;Rails&lt;/code&gt; 到现在两年多了。一开始是基于</summary>
+        
+      
+    
+    
+    
+    <category term="程序员的幸福：让代码变成强有力的工具" scheme="https://xiongyuchi.top/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%B9%B8%E7%A6%8F%EF%BC%9A%E8%AE%A9%E4%BB%A3%E7%A0%81%E5%8F%98%E6%88%90%E5%BC%BA%E6%9C%89%E5%8A%9B%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Rails 中接入微信支付指北</title>
+    <link href="https://xiongyuchi.top/2020/12/28/zai-rails-zhong-jie-ru-wei-xin-zhi-fu-zhi-bei/"/>
+    <id>https://xiongyuchi.top/2020/12/28/zai-rails-zhong-jie-ru-wei-xin-zhi-fu-zhi-bei/</id>
+    <published>2020-12-27T18:57:35.000Z</published>
+    <updated>2022-07-18T06:01:03.668Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;0-写在前面&quot;&gt;&lt;a href=&quot;#0-写在前面&quot; class=&quot;headerlink&quot; title=&quot;0. 写在前面&quot;&gt;&lt;/a&gt;0.</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Rails" scheme="https://xiongyuchi.top/tags/Rails/"/>
+    
+    <category term="MongoDB" scheme="https://xiongyuchi.top/tags/MongoDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Rails 上搭建 React 服务端渲染瞎谈</title>
+    <link href="https://xiongyuchi.top/2020/12/15/zai-rails-shang-da-jian-react-fu-wu-duan-xuan-ran-xia-tan/"/>
+    <id>https://xiongyuchi.top/2020/12/15/zai-rails-shang-da-jian-react-fu-wu-duan-xuan-ran-xia-tan/</id>
+    <published>2020-12-15T06:32:58.000Z</published>
+    <updated>2022-07-18T06:01:03.667Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本文主要提供了一种在 &lt;code&gt;Rails&lt;/code&gt; 里 &lt;code&gt;React&lt;/code&gt; 搭建服务端渲染 SPA 的思路，主要涉及的技术栈如下：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ruby&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Rails" scheme="https://xiongyuchi.top/tags/Rails/"/>
+    
+    <category term="MongoDB" scheme="https://xiongyuchi.top/tags/MongoDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>node-sass 提示找不到 python 的解决方案</title>
+    <link href="https://xiongyuchi.top/2020/07/12/node-sass-ti-shi-zhao-bu-dao-python-de-jie-jue-fang-an/"/>
+    <id>https://xiongyuchi.top/2020/07/12/node-sass-ti-shi-zhao-bu-dao-python-de-jie-jue-fang-an/</id>
+    <published>2020-07-12T06:05:42.000Z</published>
+    <updated>2022-07-18T06:01:03.634Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;问题描述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;安装&lt;code&gt;node-sass&lt;/code&gt;时报错提示找不到&lt;code&gt;python&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方案&lt;/strong&gt;&lt;/p&gt;
+&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="前端踩坑记录" scheme="https://xiongyuchi.top/categories/%E5%89%8D%E7%AB%AF%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记一次百度云 BOS 踩坑</title>
+    <link href="https://xiongyuchi.top/2020/07/12/ji-yi-ci-bai-du-yun-bos-cai-keng/"/>
+    <id>https://xiongyuchi.top/2020/07/12/ji-yi-ci-bai-du-yun-bos-cai-keng/</id>
+    <published>2020-07-12T05:56:18.000Z</published>
+    <updated>2022-07-18T06:01:03.669Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;问题描述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用百度提供的 STS 获取 bos 临时授权时出现下面的错误：&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    <category term="好饿，早知道不学编程了" scheme="https://xiongyuchi.top/categories/%E5%A5%BD%E9%A5%BF%EF%BC%8C%E6%97%A9%E7%9F%A5%E9%81%93%E4%B8%8D%E5%AD%A6%E7%BC%96%E7%A8%8B%E4%BA%86/"/>
+    
+    
+    <category term="运维" scheme="https://xiongyuchi.top/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这可能是最全最细节的 rails 环境搭建向导了 (基于 rvm)</title>
+    <link href="https://xiongyuchi.top/2020/07/12/zhe-ke-neng-shi-zui-quan-zui-xi-jie-de-rails-huan-jing-da-jian-xiang-dao-liao-ji-yu-rvm/"/>
+    <id>https://xiongyuchi.top/2020/07/12/zhe-ke-neng-shi-zui-quan-zui-xi-jie-de-rails-huan-jing-da-jian-xiang-dao-liao-ji-yu-rvm/</id>
+    <published>2020-07-12T05:17:22.000Z</published>
+    <updated>2022-07-18T06:01:03.669Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;0-写在前面&quot;&gt;&lt;a href=&quot;#0-写在前面&quot; class=&quot;headerlink&quot; title=&quot;0. 写在前面&quot;&gt;&lt;/a&gt;0.</summary>
+        
+      
+    
+    
+    
+    <category term="菜鸡的 Ruby 之旅" scheme="https://xiongyuchi.top/categories/%E8%8F%9C%E9%B8%A1%E7%9A%84-Ruby-%E4%B9%8B%E6%97%85/"/>
+    
+    
+    <category term="Ruby" scheme="https://xiongyuchi.top/tags/Ruby/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Rails 里使用 MongoDB</title>
+    <link href="https://xiongyuchi.top/2020/06/21/zai-rails-li-shi-yong-mongodb/"/>
+    <id>https://xiongyuchi.top/2020/06/21/zai-rails-li-shi-yong-mongodb/</id>
+    <published>2020-06-21T08:23:50.000Z</published>
+    <updated>2022-07-18T06:01:03.668Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-写在前面&quot;&gt;&lt;a href=&quot;#1-写在前面&quot; class=&quot;headerlink&quot; title=&quot;1. 写在前面&quot;&gt;&lt;/a&gt;1. 写在前面&lt;/h2&gt;&lt;p&gt;我逛&lt;code&gt;ruby china&lt;/code&gt;的时候发现很多前辈 12</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Rails" scheme="https://xiongyuchi.top/tags/Rails/"/>
+    
+    <category term="MongoDB" scheme="https://xiongyuchi.top/tags/MongoDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>node-rsa 与 ruby openSSL 的一点问题</title>
+    <link href="https://xiongyuchi.top/2020/06/21/node-rsa-yu-ruby-openssl-de-yi-dian-wen-ti/"/>
+    <id>https://xiongyuchi.top/2020/06/21/node-rsa-yu-ruby-openssl-de-yi-dian-wen-ti/</id>
+    <published>2020-06-21T08:03:54.000Z</published>
+    <updated>2022-07-18T06:01:03.634Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-问题描述&quot;&gt;&lt;a href=&quot;#1-问题描述&quot; class=&quot;headerlink&quot; title=&quot;1. 问题描述&quot;&gt;&lt;/a&gt;1.</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="Ruby" scheme="https://xiongyuchi.top/tags/Ruby/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小强升职记: 一本被名字耽搁的时间管理宝典</title>
+    <link href="https://xiongyuchi.top/2020/06/17/xiao-qiang-sheng-zhi-ji-yi-ben-bei-ming-zi-dan-ge-de-shi-jian-guan-li-bao-dian/"/>
+    <id>https://xiongyuchi.top/2020/06/17/xiao-qiang-sheng-zhi-ji-yi-ben-bei-ming-zi-dan-ge-de-shi-jian-guan-li-bao-dian/</id>
+    <published>2020-06-17T11:13:41.000Z</published>
+    <updated>2022-07-18T06:01:03.668Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-介绍&quot;&gt;&lt;a href=&quot;#1-介绍&quot; class=&quot;headerlink&quot; title=&quot;1. 介绍&quot;&gt;&lt;/a&gt;1. 介绍&lt;/h2&gt;&lt;p&gt;最近读了《小强升职记》一书，不由得感慨：给书起一个好名字太重要！乍一听这名字不由想到什么《杜 xx</summary>
+        
+      
+    
+    
+    
+    <category term="好书分享" scheme="https://xiongyuchi.top/categories/%E5%A5%BD%E4%B9%A6%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="读书笔记" scheme="https://xiongyuchi.top/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="时间管理" scheme="https://xiongyuchi.top/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript(6) 函数表达式</title>
+    <link href="https://xiongyuchi.top/2020/06/15/javascript-6-han-shu-biao-da-shi/"/>
+    <id>https://xiongyuchi.top/2020/06/15/javascript-6-han-shu-biao-da-shi/</id>
+    <published>2020-06-15T13:29:13.000Z</published>
+    <updated>2022-07-18T06:01:03.631Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-递归&quot;&gt;&lt;a href=&quot;#1-递归&quot; class=&quot;headerlink&quot; title=&quot;1. 递归&quot;&gt;&lt;/a&gt;1. 递归&lt;/h1&gt;&lt;h1 id=&quot;2-闭包&quot;&gt;&lt;a href=&quot;#2-闭包&quot; class=&quot;headerlink&quot; title=&quot;2.</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>扒视频！Ruby 爬虫初探</title>
+    <link href="https://xiongyuchi.top/2020/06/11/ba-shi-pin-ruby-pa-chong-chu-tan/"/>
+    <id>https://xiongyuchi.top/2020/06/11/ba-shi-pin-ruby-pa-chong-chu-tan/</id>
+    <published>2020-06-11T11:25:25.000Z</published>
+    <updated>2022-07-18T06:01:03.668Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;写在最前面：出于学习目的，我在网络上分享了这篇文章。但我不能保证我的文章是否会给文章里的站点带来困扰，因而文中将不会出现该站点的真实访问路径。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;1-起因&quot;&gt;&lt;a href=&quot;#1-起因&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="程序员的幸福：让代码变成强有力的工具" scheme="https://xiongyuchi.top/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%B9%B8%E7%A6%8F%EF%BC%9A%E8%AE%A9%E4%BB%A3%E7%A0%81%E5%8F%98%E6%88%90%E5%BC%BA%E6%9C%89%E5%8A%9B%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Ruby" scheme="https://xiongyuchi.top/tags/Ruby/"/>
+    
+    <category term="后端" scheme="https://xiongyuchi.top/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="爬虫" scheme="https://xiongyuchi.top/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript(5) 面向对象的程序设计</title>
+    <link href="https://xiongyuchi.top/2020/06/08/javascript-5-mian-xiang-dui-xiang-de-cheng-xu-she-ji/"/>
+    <id>https://xiongyuchi.top/2020/06/08/javascript-5-mian-xiang-dui-xiang-de-cheng-xu-she-ji/</id>
+    <published>2020-06-08T12:48:27.000Z</published>
+    <updated>2022-07-18T06:01:03.631Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-对象&quot;&gt;&lt;a href=&quot;#1-对象&quot; class=&quot;headerlink&quot; title=&quot;1. 对象&quot;&gt;&lt;/a&gt;1.</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript(4) 引用类型</title>
+    <link href="https://xiongyuchi.top/2020/06/04/javascript-4-yin-yong-lei-xing/"/>
+    <id>https://xiongyuchi.top/2020/06/04/javascript-4-yin-yong-lei-xing/</id>
+    <published>2020-06-04T11:15:26.000Z</published>
+    <updated>2022-07-18T06:01:03.631Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-Object-类型&quot;&gt;&lt;a href=&quot;#1-Object-类型&quot; class=&quot;headerlink&quot; title=&quot;1. Object 类型&quot;&gt;&lt;/a&gt;1. Object 类型&lt;/h1&gt;&lt;p&gt;创建一个对象有两种方式：&lt;/p&gt;
+&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript(3) 变量、作用域和内存问题</title>
+    <link href="https://xiongyuchi.top/2020/05/30/javascript-3-bian-liang-zuo-yong-yu-he-nei-cun-wen-ti/"/>
+    <id>https://xiongyuchi.top/2020/05/30/javascript-3-bian-liang-zuo-yong-yu-he-nei-cun-wen-ti/</id>
+    <published>2020-05-30T04:13:55.000Z</published>
+    <updated>2022-07-18T06:01:03.631Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-基本类型和引用类型&quot;&gt;&lt;a href=&quot;#1-基本类型和引用类型&quot; class=&quot;headerlink&quot; title=&quot;1. 基本类型和引用类型&quot;&gt;&lt;/a&gt;1.</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript(2) 基本语法概念</title>
+    <link href="https://xiongyuchi.top/2020/05/23/javascript-2-ji-ben-yu-fa-gai-nian/"/>
+    <id>https://xiongyuchi.top/2020/05/23/javascript-2-ji-ben-yu-fa-gai-nian/</id>
+    <published>2020-05-23T06:58:15.000Z</published>
+    <updated>2022-07-18T06:01:03.631Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-语法要点&quot;&gt;&lt;a href=&quot;#1-语法要点&quot; class=&quot;headerlink&quot; title=&quot;1. 语法要点&quot;&gt;&lt;/a&gt;1. 语法要点&lt;/h1&gt;&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt; 语法借鉴了 &lt;code&gt;C/Java&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript(1) 在 HTML 中使用 JavaScript</title>
+    <link href="https://xiongyuchi.top/2020/05/23/javascript-1-zai-html-zhong-shi-yong-javascript/"/>
+    <id>https://xiongyuchi.top/2020/05/23/javascript-1-zai-html-zhong-shi-yong-javascript/</id>
+    <published>2020-05-23T06:13:11.000Z</published>
+    <updated>2022-07-18T06:01:03.630Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-script-标签&quot;&gt;&lt;a href=&quot;#1-script-标签&quot; class=&quot;headerlink&quot; title=&quot;1. script 标签&quot;&gt;&lt;/a&gt;1. script 标签&lt;/h1&gt;&lt;p&gt;在 &lt;code&gt;HTML&lt;/code&gt; 中使用</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rails Migrate 关于 MySQL Lock 的一点问题</title>
+    <link href="https://xiongyuchi.top/2020/05/22/rails-migrate-guan-yu-mysql-lock-de-yi-dian-wen-ti/"/>
+    <id>https://xiongyuchi.top/2020/05/22/rails-migrate-guan-yu-mysql-lock-de-yi-dian-wen-ti/</id>
+    <published>2020-05-22T13:34:12.000Z</published>
+    <updated>2022-07-18T06:01:03.632Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;问题描述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;本周将数据由&lt;code&gt;PSQL&lt;/code&gt;迁移到了&lt;code&gt;MySQL&lt;/code&gt;，在迁移顺利进行之后，于周三进行了一个小规模的&lt;code&gt;BUG&lt;/code&gt;修复，为修复数据表中的错误，增加了 4</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Rails" scheme="https://xiongyuchi.top/tags/Rails/"/>
+    
+    <category term="MySQL" scheme="https://xiongyuchi.top/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rails 使用 puma 带证书启动</title>
+    <link href="https://xiongyuchi.top/2020/05/22/rails-shi-yong-puma-dai-zheng-shu-qi-dong/"/>
+    <id>https://xiongyuchi.top/2020/05/22/rails-shi-yong-puma-dai-zheng-shu-qi-dong/</id>
+    <published>2020-05-22T13:22:02.000Z</published>
+    <updated>2022-07-18T06:01:03.632Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;问题描述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不常见的场景，偶尔间因为没有&lt;code&gt;Nginx&lt;/code&gt;服务器可以用，但又需要测试&lt;code&gt;HTTPS&lt;/code&gt;，因此使用这种方式来带证书启动。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方案&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Rails" scheme="https://xiongyuchi.top/tags/Rails/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RubyMine 执行 bin 目录下指令无权限的解决方案</title>
+    <link href="https://xiongyuchi.top/2020/05/22/rubymine-zhi-xing-bin-mu-lu-xia-zhi-ling-wu-quan-xian-de-jie-jue-fang-an/"/>
+    <id>https://xiongyuchi.top/2020/05/22/rubymine-zhi-xing-bin-mu-lu-xia-zhi-ling-wu-quan-xian-de-jie-jue-fang-an/</id>
+    <published>2020-05-22T13:15:04.000Z</published>
+    <updated>2022-07-18T06:01:03.633Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;问题描述&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;RubyMine&lt;/code&gt;点击测试时提示权限不够&amp;#x2F;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RubyMine&lt;/code&gt;终端执行&lt;code&gt;./bin/xxx&lt;/code&gt;命令提示权限不</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Linux" scheme="https://xiongyuchi.top/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rails test 等命令卡死常用的解决方案</title>
+    <link href="https://xiongyuchi.top/2020/05/22/rails-test-deng-ming-ling-qia-si-chang-yong-de-jie-jue-fang-an/"/>
+    <id>https://xiongyuchi.top/2020/05/22/rails-test-deng-ming-ling-qia-si-chang-yong-de-jie-jue-fang-an/</id>
+    <published>2020-05-22T13:03:25.000Z</published>
+    <updated>2022-07-18T06:01:03.632Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;问题描述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;之前配合测试的实习生跑&lt;code&gt;TeamCity&lt;/code&gt;时发现写好的&lt;code&gt;rails test&lt;/code&gt;经常构建超时，上了测试服务器试了一下发现运行&lt;code&gt;rails</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Rails" scheme="https://xiongyuchi.top/tags/Rails/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rails 和 HTTP422 那点事儿</title>
+    <link href="https://xiongyuchi.top/2020/05/22/rails-he-http422-na-dian-shi-er/"/>
+    <id>https://xiongyuchi.top/2020/05/22/rails-he-http422-na-dian-shi-er/</id>
+    <published>2020-05-22T12:37:00.000Z</published>
+    <updated>2022-07-18T06:01:03.633Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;问题描述&lt;/strong&gt;&lt;br&gt;用&lt;code&gt;Ruby on Rails&lt;/code&gt;开发点接口的时候遇到了&lt;code&gt;HTTP</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Rails" scheme="https://xiongyuchi.top/tags/Rails/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ruby 中的数据类型</title>
+    <link href="https://xiongyuchi.top/2019/11/22/ruby-zhong-de-shu-ju-lei-xing/"/>
+    <id>https://xiongyuchi.top/2019/11/22/ruby-zhong-de-shu-ju-lei-xing/</id>
+    <published>2019-11-22T13:22:02.000Z</published>
+    <updated>2022-07-18T06:01:03.633Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;数据类型&quot;&gt;&lt;a href=&quot;#数据类型&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Rails" scheme="https://xiongyuchi.top/tags/Rails/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 安装 Android Studio</title>
+    <link href="https://xiongyuchi.top/2019/06/08/linux-an-zhuang-android-studio/"/>
+    <id>https://xiongyuchi.top/2019/06/08/linux-an-zhuang-android-studio/</id>
+    <published>2019-06-08T14:08:14.000Z</published>
+    <updated>2022-07-18T06:01:03.631Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;不要问我为什么一会儿前端一会儿&lt;code&gt;Ruby&lt;/code&gt;一会儿又&lt;code&gt;Android&lt;/code&gt;，心里苦……&lt;/p&gt;
+&lt;p&gt;使用的操作系统是&lt;code&gt;ubuntu&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;1-安装JDK&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Nginx 配置简单的反向代理</title>
+    <link href="https://xiongyuchi.top/2019/05/30/nginx-pei-zhi-jian-dan-de-fan-xiang-dai-li/"/>
+    <id>https://xiongyuchi.top/2019/05/30/nginx-pei-zhi-jian-dan-de-fan-xiang-dai-li/</id>
+    <published>2019-05-30T15:47:14.000Z</published>
+    <updated>2022-07-18T06:01:03.632Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;先讲一下场景，手里有两个域名，一台云服务器，一堆垃圾项目。&lt;/p&gt;
+&lt;p&gt;现在想要的是，访问域名 A，能够访问的是 3000 端口下的应用 A；访问域名 B，访问的是 3001 端口下的应用 B；&lt;/p&gt;
+&lt;h2 id=&quot;1-安装-nginx&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git clone 速度太慢的解决方案乱谈</title>
+    <link href="https://xiongyuchi.top/2019/05/30/git-clone-su-du-tai-man/"/>
+    <id>https://xiongyuchi.top/2019/05/30/git-clone-su-du-tai-man/</id>
+    <published>2019-05-30T08:23:00.000Z</published>
+    <updated>2022-07-18T06:01:03.633Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;以下方案仅供参考，目测替换后速度由 4-10k 提升到 60-200k，依然龟速……&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;带权限打开&lt;code&gt;/etc/hosts&lt;/code&gt; &lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    <category term="菜鸡的 Ruby 之旅" scheme="https://xiongyuchi.top/categories/%E8%8F%9C%E9%B8%A1%E7%9A%84-Ruby-%E4%B9%8B%E6%97%85/"/>
+    
+    
+    <category term="Ruby" scheme="https://xiongyuchi.top/tags/Ruby/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 下安装 NodeJs</title>
+    <link href="https://xiongyuchi.top/2019/05/10/linux-xia-an-zhuang-nodejs/"/>
+    <id>https://xiongyuchi.top/2019/05/10/linux-xia-an-zhuang-nodejs/</id>
+    <published>2019-05-10T14:15:58.000Z</published>
+    <updated>2022-07-18T06:01:03.631Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;不得不说&lt;code&gt;Linux&lt;/code&gt;下坑确实多，使用&lt;code&gt;apt-get&lt;/code&gt;安装的&lt;code&gt;NodeJS&lt;/code&gt;是 4.2.6 版本的，而使用&lt;code&gt;nvm&lt;/code&gt;又老是遇到问题&lt;/p&gt;
+&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 服务器无法使用 mstsc 工具链接的解决方案</title>
+    <link href="https://xiongyuchi.top/2019/05/10/linux-shi-li-fu-wu-qi-wu-fa-shi-yong-mstsc-lian-jie/"/>
+    <id>https://xiongyuchi.top/2019/05/10/linux-shi-li-fu-wu-qi-wu-fa-shi-yong-mstsc-lian-jie/</id>
+    <published>2019-05-10T12:02:00.000Z</published>
+    <updated>2022-07-18T06:01:03.632Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近更换了阿里云的云服务器系统为&lt;code&gt;ubuntu&lt;/code&gt;后发现使用&lt;code&gt;windows&lt;/code&gt;自带的&lt;code&gt;mstsc&lt;/code&gt;工具无法连接，需要使用阿里云的救援连接安装并启动&lt;code&gt;xrdp&lt;/code&gt;：&lt;/p&gt;
+&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>项目从 Linux 迁移到 Windows 后找不到 Python 的问题</title>
+    <link href="https://xiongyuchi.top/2019/04/19/xiang-mu-cong-linux-qian-yi-dao-windows-hou-zhao-bu-dao-python-de-wen-ti/"/>
+    <id>https://xiongyuchi.top/2019/04/19/xiang-mu-cong-linux-qian-yi-dao-windows-hou-zhao-bu-dao-python-de-wen-ti/</id>
+    <published>2019-04-19T14:28:26.000Z</published>
+    <updated>2022-07-18T06:01:03.669Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="好饿，早知道不学编程了" scheme="https://xiongyuchi.top/categories/%E5%A5%BD%E9%A5%BF%EF%BC%8C%E6%97%A9%E7%9F%A5%E9%81%93%E4%B8%8D%E5%AD%A6%E7%BC%96%E7%A8%8B%E4%BA%86/"/>
+    
+    
+    <category term="运维" scheme="https://xiongyuchi.top/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MongoDB 配置</title>
+    <link href="https://xiongyuchi.top/2018/11/26/mongodb-pei-zhi/"/>
+    <id>https://xiongyuchi.top/2018/11/26/mongodb-pei-zhi/</id>
+    <published>2018-11-26T00:01:00.000Z</published>
+    <updated>2022-07-18T06:01:03.632Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-安装一路向下&quot;&gt;&lt;a href=&quot;#1-安装一路向下&quot; class=&quot;headerlink&quot; title=&quot;1. 安装一路向下&quot;&gt;&lt;/a&gt;1. 安装一路向下&lt;/h2&gt;&lt;h2 id=&quot;2-完了之后先在安装盘根目录创建一个-data-db文件夹&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript 高级程序设计" scheme="https://xiongyuchi.top/categories/JavaScript-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://xiongyuchi.top/tags/JavaScript/"/>
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>练手项目：BullShit 聊天室（第二天）</title>
+    <link href="https://xiongyuchi.top/2018/10/17/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-er-tian/"/>
+    <id>https://xiongyuchi.top/2018/10/17/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-er-tian/</id>
+    <published>2018-10-17T07:30:00.000Z</published>
+    <updated>2022-07-18T06:01:03.669Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;BullShit</summary>
+        
+      
+    
+    
+    
+    <category term="好饿，早知道不学编程了" scheme="https://xiongyuchi.top/categories/%E5%A5%BD%E9%A5%BF%EF%BC%8C%E6%97%A9%E7%9F%A5%E9%81%93%E4%B8%8D%E5%AD%A6%E7%BC%96%E7%A8%8B%E4%BA%86/"/>
+    
+    
+    <category term="Java" scheme="https://xiongyuchi.top/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>练手项目：BullShit 聊天室（第一天）</title>
+    <link href="https://xiongyuchi.top/2018/10/16/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/"/>
+    <id>https://xiongyuchi.top/2018/10/16/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/</id>
+    <published>2018-10-16T02:47:00.000Z</published>
+    <updated>2022-07-18T06:01:03.669Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;接到关于毕业设计的一些课题，在其中看到不少可以尝试的项目，电子商城，网络聊天室等等。在课上也挺无聊的，就开始尝试写了个网络聊天室的小 Demo。&lt;/p&gt;
+&lt;h2 id=&quot;1-设想&quot;&gt;&lt;a href=&quot;#1-设想&quot; class=&quot;headerlink&quot; title=&quot;1.</summary>
+        
+      
+    
+    
+    
+    <category term="好饿，早知道不学编程了" scheme="https://xiongyuchi.top/categories/%E5%A5%BD%E9%A5%BF%EF%BC%8C%E6%97%A9%E7%9F%A5%E9%81%93%E4%B8%8D%E5%AD%A6%E7%BC%96%E7%A8%8B%E4%BA%86/"/>
+    
+    
+    <category term="Java" scheme="https://xiongyuchi.top/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个可以随机获取高质量图片的地址</title>
+    <link href="https://xiongyuchi.top/2018/09/14/sui-ji-huo-qu-dao-de-gao-zhi-liang-tu-pian/"/>
+    <id>https://xiongyuchi.top/2018/09/14/sui-ji-huo-qu-dao-de-gao-zhi-liang-tu-pian/</id>
+    <published>2018-09-14T14:05:43.000Z</published>
+    <updated>2022-07-18T06:01:03.669Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;其实前端随机我是想过一些这方面的事情的，起初是看到了 Chrome 浏览器中的一款叫 Momentum 的插件。&lt;/p&gt;
+&lt;p&gt;每次启动页面时背景图片都不是一样的，并且其图片质量都是非常高的，曾经想过用一些 “拙劣” 的方法去实现，最后都以不靠谱结束&amp;#x3D;</summary>
+        
+      
+    
+    
+    
+    <category term="好饿，早知道不学编程了" scheme="https://xiongyuchi.top/categories/%E5%A5%BD%E9%A5%BF%EF%BC%8C%E6%97%A9%E7%9F%A5%E9%81%93%E4%B8%8D%E5%AD%A6%E7%BC%96%E7%A8%8B%E4%BA%86/"/>
+    
+    
+    <category term="Java" scheme="https://xiongyuchi.top/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简单的遍历文件路径</title>
+    <link href="https://xiongyuchi.top/2018/09/08/jian-dan-de-bian-li-wen-jian-lu-jing/"/>
+    <id>https://xiongyuchi.top/2018/09/08/jian-dan-de-bian-li-wen-jian-lu-jing/</id>
+    <published>2018-09-08T13:48:00.000Z</published>
+    <updated>2022-07-18T06:01:03.668Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;闲得无聊写了一个用来遍历所有文件夹的 Class，也许以后会用上吧。&amp;#x3D; &amp;#x3D;！&lt;/p&gt;
+&lt;h2 id=&quot;1-ListDirUtil类的编写&quot;&gt;&lt;a href=&quot;#1-ListDirUtil类的编写&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="好饿，早知道不学编程了" scheme="https://xiongyuchi.top/categories/%E5%A5%BD%E9%A5%BF%EF%BC%8C%E6%97%A9%E7%9F%A5%E9%81%93%E4%B8%8D%E5%AD%A6%E7%BC%96%E7%A8%8B%E4%BA%86/"/>
+    
+    
+    <category term="Java" scheme="https://xiongyuchi.top/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于 Url 传参的一点问题</title>
+    <link href="https://xiongyuchi.top/2018/09/07/guan-yu-url-chuan-can-de-yi-dian-wen-ti/"/>
+    <id>https://xiongyuchi.top/2018/09/07/guan-yu-url-chuan-can-de-yi-dian-wen-ti/</id>
+    <published>2018-09-07T14:00:00.000Z</published>
+    <updated>2022-07-18T06:01:03.667Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;晚一点看完比赛突然想起来 URL 传参的问题。&lt;/p&gt;
+&lt;p&gt;当页面使用 URL 传参时，可以在浏览器通过修改 URL 来达成修改传参的效果，对于某些要插入到数据库的操作，这样的现象就略微有些危险了。虽然能使用&lt;code&gt;doPost()&lt;/code&gt;方法不再在 URL</summary>
+        
+      
+    
+    
+    
+    <category term="程序员的幸福：让代码变成强有力的工具" scheme="https://xiongyuchi.top/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%B9%B8%E7%A6%8F%EF%BC%9A%E8%AE%A9%E4%BB%A3%E7%A0%81%E5%8F%98%E6%88%90%E5%BC%BA%E6%9C%89%E5%8A%9B%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Java" scheme="https://xiongyuchi.top/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Servlet  + JSP 实现验证码</title>
+    <link href="https://xiongyuchi.top/2018/09/06/servlet-jsp-shi-xian-yan-zheng-ma/"/>
+    <id>https://xiongyuchi.top/2018/09/06/servlet-jsp-shi-xian-yan-zheng-ma/</id>
+    <published>2018-09-06T07:52:02.000Z</published>
+    <updated>2022-07-18T06:01:03.634Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;使用 Servlet+Jsp 完成验证码主要有如下步骤&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;完成 HTML 页面的编写&lt;/li&gt;
+&lt;li&gt;完成生成随机验证码的 Servlet&lt;/li&gt;
+&lt;li&gt;完成刷新更换验证码的功能&lt;/li&gt;
+&lt;li&gt;完成验证验证码是否正确是</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Linux" scheme="https://xiongyuchi.top/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一次马虎导致的 Tomcat 闪退……</title>
+    <link href="https://xiongyuchi.top/2018/09/05/yi-ci-ma-hu-dao-zhi-de-tomcat-shan-tui/"/>
+    <id>https://xiongyuchi.top/2018/09/05/yi-ci-ma-hu-dao-zhi-de-tomcat-shan-tui/</id>
+    <published>2018-09-05T14:00:00.000Z</published>
+    <updated>2022-07-18T06:01:03.666Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;昨天弄完新的小&lt;code&gt;demo&lt;/code&gt;准备挂到服务器上，在服务器上关掉了&lt;code&gt;Tomcat&lt;/code&gt;然后删掉了&lt;code&gt;webapps&lt;/code&gt;文件夹下的 War</summary>
+        
+      
+    
+    
+    
+    <category term="好书分享" scheme="https://xiongyuchi.top/categories/%E5%A5%BD%E4%B9%A6%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="读书笔记" scheme="https://xiongyuchi.top/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="时间管理" scheme="https://xiongyuchi.top/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>别踩白块儿总结</title>
+    <link href="https://xiongyuchi.top/2018/09/04/bie-cai-bai-kuai-er-zong-jie/"/>
+    <id>https://xiongyuchi.top/2018/09/04/bie-cai-bai-kuai-er-zong-jie/</id>
+    <published>2018-09-04T15:02:00.000Z</published>
+    <updated>2022-07-18T06:01:03.667Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天写完了所谓的 “后端” 部分，前面说简单其实写起来还是遇到了不少问题。&lt;/p&gt;
+&lt;p&gt;又遇到了 php 时的插入数据库时的？？？问题，修改了云服务器 mysql 的 my.ini</summary>
+        
+      
+    
+    
+    
+    <category term="程序员的幸福：让代码变成强有力的工具" scheme="https://xiongyuchi.top/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%B9%B8%E7%A6%8F%EF%BC%9A%E8%AE%A9%E4%BB%A3%E7%A0%81%E5%8F%98%E6%88%90%E5%BC%BA%E6%9C%89%E5%8A%9B%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>别踩白块儿 HTML 版的第二天</title>
+    <link href="https://xiongyuchi.top/2018/09/03/bie-cai-bai-kuai-er-html-ban-de-di-er-tian/"/>
+    <id>https://xiongyuchi.top/2018/09/03/bie-cai-bai-kuai-er-html-ban-de-di-er-tian/</id>
+    <published>2018-09-03T07:15:00.000Z</published>
+    <updated>2022-07-18T06:01:03.667Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;大清早开始鼓捣事件冒泡结果手一抖把昨天写的 js 文件删了……于是乎花了一上午重写 js 文件&lt;/p&gt;
+&lt;p&gt;花了些时间完成了随机生成黑块的功能&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    <category term="程序员的幸福：让代码变成强有力的工具" scheme="https://xiongyuchi.top/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%B9%B8%E7%A6%8F%EF%BC%9A%E8%AE%A9%E4%BB%A3%E7%A0%81%E5%8F%98%E6%88%90%E5%BC%BA%E6%9C%89%E5%8A%9B%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>别踩白块儿 HTML 版的第一天</title>
+    <link href="https://xiongyuchi.top/2018/09/02/bie-cai-bai-kuai-er-html-ban-de-di-yi-tian/"/>
+    <id>https://xiongyuchi.top/2018/09/02/bie-cai-bai-kuai-er-html-ban-de-di-yi-tian/</id>
+    <published>2018-09-02T14:54:00.000Z</published>
+    <updated>2022-07-18T06:01:03.667Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;开始了一个非常有意思的小作业：别踩白块儿。&lt;/p&gt;
+&lt;p&gt;一开始学前端的时候就已经想到了可以尝试一下，今天是终于开始了。&lt;br&gt;首先确定的是思路，页面只有 3</summary>
+        
+      
+    
+    
+    
+    <category term="程序员的幸福：让代码变成强有力的工具" scheme="https://xiongyuchi.top/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%B9%B8%E7%A6%8F%EF%BC%9A%E8%AE%A9%E4%BB%A3%E7%A0%81%E5%8F%98%E6%88%90%E5%BC%BA%E6%9C%89%E5%8A%9B%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PringStackTrace 方法的一点碎碎念</title>
+    <link href="https://xiongyuchi.top/2018/08/31/pringstacktrace-fang-fa-de-yi-dian-sui-sui-nian/"/>
+    <id>https://xiongyuchi.top/2018/08/31/pringstacktrace-fang-fa-de-yi-dian-sui-sui-nian/</id>
+    <published>2018-08-31T15:40:00.000Z</published>
+    <updated>2022-07-18T06:01:03.632Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天一直在写界面，晚一点的时候想随便写个点后端然后扔服务器上看看效果，然后运行发现一直在报 NullPointerException 空指针异常，找到 try-catch 的地方看了半天也是一脸懵逼，然后想起了之前学过的一个方法，可以将异常信息打印到控制台，错记成了</summary>
+        
+      
+    
+    
+    
+    <category term="前端踩坑记录" scheme="https://xiongyuchi.top/categories/%E5%89%8D%E7%AB%AF%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>云服务器：个人网站初体验</title>
+    <link href="https://xiongyuchi.top/2018/08/25/yun-fu-wu-qi-ge-ren-wang-zhan-chu-ti-yan/"/>
+    <id>https://xiongyuchi.top/2018/08/25/yun-fu-wu-qi-ge-ren-wang-zhan-chu-ti-yan/</id>
+    <published>2018-08-25T08:34:00.000Z</published>
+    <updated>2022-07-18T06:01:03.666Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;折腾了一天，终于算是跌跌撞撞的入了门 hhhh&lt;/p&gt;
+&lt;h2 id=&quot;1-登录云服务器&quot;&gt;&lt;a href=&quot;#1-登录云服务器&quot; class=&quot;headerlink&quot; title=&quot;1. 登录云服务器&quot;&gt;&lt;/a&gt;1.</summary>
+        
+      
+    
+    
+    
+    <category term="好书分享" scheme="https://xiongyuchi.top/categories/%E5%A5%BD%E4%B9%A6%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="读书笔记" scheme="https://xiongyuchi.top/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="时间管理" scheme="https://xiongyuchi.top/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于浏览器那些蛋疼的东西</title>
+    <link href="https://xiongyuchi.top/2018/08/14/guan-yu-liu-lan-qi-na-xie-dan-teng-de-dong-xi/"/>
+    <id>https://xiongyuchi.top/2018/08/14/guan-yu-liu-lan-qi-na-xie-dan-teng-de-dong-xi/</id>
+    <published>2018-08-14T05:44:00.000Z</published>
+    <updated>2022-07-18T06:01:03.667Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;实习时接手了一台新电脑，然后使用浏览器的时候有了一些想法，记录一下。&lt;/p&gt;
+&lt;p&gt;记住密码是大家都不会陌生的功能，许多家用电脑都是安装的 360 浏览器使得这些功能被使用的特别广泛，但这其中却存在着一些安全问题。&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="程序员的幸福：让代码变成强有力的工具" scheme="https://xiongyuchi.top/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%B9%B8%E7%A6%8F%EF%BC%9A%E8%AE%A9%E4%BB%A3%E7%A0%81%E5%8F%98%E6%88%90%E5%BC%BA%E6%9C%89%E5%8A%9B%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="前端" scheme="https://xiongyuchi.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>tortoiseGit SSH 公钥的配置</title>
+    <link href="https://xiongyuchi.top/2018/08/02/tortoisegit-ssh-gong-yao-de-pei-zhi/"/>
+    <id>https://xiongyuchi.top/2018/08/02/tortoisegit-ssh-gong-yao-de-pei-zhi/</id>
+    <published>2018-08-02T11:08:42.000Z</published>
+    <updated>2022-07-18T06:01:03.634Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;使用 Git 命令行生成公钥和私钥&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;进入&lt;code&gt;git push&lt;/code&gt;界面（备注：左 Shift + 鼠标右键弹出菜单里面，有直接进入命令行的菜单，但是这里千万不要用这个，因为这里进入的命令行和系统 cmd</summary>
+        
+      
+    
+    
+    
+    <category term="Rails 踩坑记录" scheme="https://xiongyuchi.top/categories/Rails-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="Linux" scheme="https://xiongyuchi.top/tags/Linux/"/>
+    
+  </entry>
+  
+</feed>
