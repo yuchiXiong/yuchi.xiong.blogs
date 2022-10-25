@@ -88,7 +88,11 @@ sudo vim /etc/hosts
 如何使用`vim`编辑，保存，不是本篇要讲的。
 
 ## 2. 下载`ruby`
-到这里其实就很简单了，直接使用如下命令即可安装你希望的`ruby`版本：
+到这里其实就很简单了，不过在下载`ruby`之前建议先替换`ruby-china`的镜像：
+~~~ shell
+echo "ruby_url=https://cache.ruby-china.com/pub/ruby" > ~/.rvm/user/db
+~~~
+之后直接使用如下命令即可安装你希望的`ruby`版本：
 ~~~ shell
 rvm install 2.5.7
 ~~~
