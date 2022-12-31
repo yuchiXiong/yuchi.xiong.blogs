@@ -1,5 +1,5 @@
-# blogs
-博文存档。
+# yuchi
+**此处的目录不再维护，[直接访问](https://xiongyuchi.top/)风味更佳。**
 
 ## 目录
 
