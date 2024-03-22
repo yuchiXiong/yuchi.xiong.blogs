@@ -4,6 +4,7 @@
 
 # Site
 title: 鱼翅
+avatar: https://avatars.githubusercontent.com/u/48373109?v=4
 description: ""
 keywords:
   - 博客
@@ -12,7 +13,7 @@ keywords:
   - 编程随想
 author: yuchiXiong
 copyright:
-language: cn
+language: zh-CN
 timezone: ""
 
 feed:
@@ -34,7 +35,7 @@ permalink_pinyin:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://xiongyuchi.top
+url: https://xiongyuchi.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -118,14 +119,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cactus-white
-
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: git@github.com:yuchiXiong/yuchi.xiong.blogs.git
-  branch: gh-pages
+# theme: cactus-white
+theme: stellar
 
 clean_css:
   exclude:
