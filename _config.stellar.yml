@@ -10,7 +10,10 @@ inject:
 
 style:
   font-size:
-    body: 1.5rem
+    root: 16px
+    body: 1.1rem # 15px
+    code: 85% # 14px
+    codeblock: 0.8125rem # 13px
   font-family:
     logo: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
     body: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
