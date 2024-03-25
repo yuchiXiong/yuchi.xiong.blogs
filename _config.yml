@@ -16,6 +16,12 @@ copyright:
 language: zh-CN
 timezone: ""
 
+
+inject:
+  script:
+    - <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+    - <script defer src="/_vercel/insights/script.js"></script>
+
 feed:
   enable: true
   type: atom
