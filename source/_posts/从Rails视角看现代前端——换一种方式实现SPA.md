@@ -66,16 +66,16 @@ categories:
 </ul>
 ```
 最终得到的 `HTML` 被发送给浏览器端，渲染出结果：
-![image.png](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/1.webp)
+![image.png](https://r2.xiongyuchi.com/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/1.webp)
 
 我们同样可以为这样的结构编写 `CSS`, `JavaScript`，但就像传统的静态页一样，我们只能在每一个页面单独的引入该页面要使用的 `CSS` 与 `JavaScript` 文件，且在缺乏构建工具的情况下，我们将无缘使用 `Less`, `Sass` 等预处理技术。
 
 最终当我们完成代码的编写后，它可能看起来就像这样：
 
-![图为 GitLab 源码中的视图，使用的模板引擎是 HAML](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/2.webp)
+![图为 GitLab 源码中的视图，使用的模板引擎是 HAML](https://r2.xiongyuchi.com/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/2.webp)
 
 而其交互体验可能就像这样：
-![图例为某些使用 JSP 开发的系统](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/3.webp)
+![图例为某些使用 JSP 开发的系统](https://r2.xiongyuchi.com/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/3.webp)
 
 
 正如前面所说，这样的项目有几个很要命的问题：
@@ -96,9 +96,9 @@ categories:
 
 简单看一下通过 `AJAX` 改造前后的页面跳转效果
 
-![不使用 ajax 时的页面跳转](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/4.webp)
+![不使用 ajax 时的页面跳转](https://r2.xiongyuchi.com/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/4.webp)
 
-![使用 ajax 时的页面跳转](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/5.webp) 
+![使用 ajax 时的页面跳转](https://r2.xiongyuchi.com/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/5.webp) 
 
 但 `AJAX` 的引入并不是没有代价的，完全依靠 `AJAX` 来动态更新的数据没有办法获得 `SEO` 的支持。同时使用 `AJAX` 意味着需要编写些许的 `JavaScript` 代码来完成 `DOM` 节点的更新操作。另一个更复杂的问题在于，当我们期望通过 `AJAX` 来完成整个应用的无刷新换页、提交时，意味着我们有大量的 `HTML` 会在 `JavaScript` 中动态的插入，即由此来完成页面的局部刷新。此时，代码的可维护性大大的降低，最终化为一头失控的猛兽。  
 
@@ -145,7 +145,7 @@ $(document).pjax('a', '#pjax-container');
 1. 在页面加载完成后，通过 `Node.cloneNode()` 来缓存页面，使得在网络断开期间也能访问已经缓存的页面。
 2. 在 `Turbolinks` 换页期间维护了一个内部的进度条用来向用户展示 `loading` 状态，与其它的特性相同，它不需要用户编写任何额外的代码。
 
-![turbolinks 换页](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/6.webp)
+![turbolinks 换页](https://r2.xiongyuchi.com/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/6.webp)
 
 观察上图，注意几个细节：
 1. 点击链接时，浏览器并没有刷新。
@@ -185,7 +185,7 @@ document.addEventListener("turbolinks:load", function() {
 
 正如 `Prefetch` 这个名字一样，`Turbolinks Prefetch` 会进行预加载操作以提升页面的访问速度，其原理实际是一种叫做 `InstantClick` 技术。主要原理为：当用户鼠标置于链接上时，提前拉取目标地址的页面并缓存，当用户点击鼠标时直接从缓存中读取该页面。
 
-![turbolinks-prefetch](./images/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/7.webp)
+![turbolinks-prefetch](https://r2.xiongyuchi.com/cong-rails-shi-jiao-kan-xian-dai-qian-duan-huan-yi-chong-fang-shi-shi-xian-spa/7.webp)
 
 观察上图：
 1. 当鼠标经过部分链接时，观察 `NetWork` 自动发送了请求。

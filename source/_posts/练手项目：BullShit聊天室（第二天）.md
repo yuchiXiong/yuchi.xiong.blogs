@@ -54,7 +54,7 @@ function callBack() {
 ## 3. 前端效果的加入
 这里尝试做一个仿英雄联盟的效果用于加好友。
 
-![添加好友.gif](./images/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-er-tian/1.webp)
+![添加好友.gif](https://r2.xiongyuchi.com/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-er-tian/1.webp)
 
 值得一提的是，因为类名一样，行为一样，结构一样，这里又遇到了之前 [白块儿](https://www.jianshu.com/p/df57faa24e47) 里对于事件解绑的问题，不过这次很快就解决了。
 

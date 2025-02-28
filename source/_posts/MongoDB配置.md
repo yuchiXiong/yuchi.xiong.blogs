@@ -14,7 +14,7 @@ categories:
 mongod --dbpath D:\software\MongoDB\data\db
 ~~~
 ## 4. 去安装目录下启动`mongod.exe`
-![启动成功](./images/mongodb-pei-zhi/1.webp)
+![启动成功](https://r2.xiongyuchi.com/mongodb-pei-zhi/1.webp)
 ## 5.配置`MongoDB Service`
 先在`/data/db`文件夹下新建一个`log`文件夹
 
@@ -32,4 +32,4 @@ logpath=log 文件夹目录\mongo.log
 mongod --config "mongo.config 目录" --install --serviceName "MongoDB"
 ~~~
 
-![完成](./images/mongodb-pei-zhi/2.webp)
+![完成](https://r2.xiongyuchi.com/mongodb-pei-zhi/2.webp)

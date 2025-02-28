@@ -78,6 +78,6 @@ $(".black_block").click(function() {
 
 该方法可以解除指定元素上的所有指定事件，这样便使分数的累加正常了。
 
-![游戏测试](./images/bie-cai-bai-kuai-er-html-ban-de-di-er-tian/2.webp)
+![游戏测试](https://r2.xiongyuchi.com/bie-cai-bai-kuai-er-html-ban-de-di-er-tian/2.webp)
 
 到这里，整个游戏的模型算是勉强写好了= =接下来润色一下界面和完成后端的编写就可以挂到服务器上啦。

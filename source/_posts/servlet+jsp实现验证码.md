@@ -25,7 +25,7 @@ categories:
 
 效果如图
 
-![预览](./images/servlet-jsp-shi-xian-yan-zheng-ma/1.webp)
+![预览](https://r2.xiongyuchi.com/servlet-jsp-shi-xian-yan-zheng-ma/1.webp)
 
 ## 2. 完成生成随机验证码的 Servlet
 
@@ -97,7 +97,7 @@ BufferedImage bi = new BufferedImage(68, 22, BufferedImage.TYPE_INT_RGB);
 
 查阅了 API，`BufferedImage`类似乎用于将图片存入缓存中，在这里我们调用的构造方法有三个参数，分别对应图片的宽高和创建的图像格式。此处的`BufferedImage.TYPE_INT_RGB`是一个类成员属性。详见 API
 
-![TYPE_INT_RGB](./images/servlet-jsp-shi-xian-yan-zheng-ma/2.webp)
+![TYPE_INT_RGB](https://r2.xiongyuchi.com/servlet-jsp-shi-xian-yan-zheng-ma/2.webp)
 
 ~~~java
 //为 bi 创建图形上下文
@@ -132,7 +132,7 @@ Random r = new Random();
 
 API 中将`Random`称为伪随机，并称`Math.random()`更容易使用= =！
 
-![Random](./images/servlet-jsp-shi-xian-yan-zheng-ma/3.webp)
+![Random](https://r2.xiongyuchi.com/servlet-jsp-shi-xian-yan-zheng-ma/3.webp)
 
 ~~~java
 int len = ch.length, index;
@@ -175,7 +175,7 @@ ImageIO.write(bi, "JPG", Response.getOutputStream());
 
 最后一个方法是我觉得最迷的- -！`ImageIO.write()`方法，API 中有三种构造方法，用于将`ImageWriter`按指定格式以三种不同方式输出。
 
-![ImageIO.write() 方法](./images/servlet-jsp-shi-xian-yan-zheng-ma/4.webp)
+![ImageIO.write() 方法](https://r2.xiongyuchi.com/servlet-jsp-shi-xian-yan-zheng-ma/4.webp)
 
 完成了如上代码的编写之后需要配置`servlet`打开`web.xml`添加如下代码。
 
@@ -191,7 +191,7 @@ ImageIO.write(bi, "JPG", Response.getOutputStream());
 ~~~
 部署后运行。
 
-![部署后运行](./images/servlet-jsp-shi-xian-yan-zheng-ma/5.webp)
+![部署后运行](https://r2.xiongyuchi.com/servlet-jsp-shi-xian-yan-zheng-ma/5.webp)
 
 到此处为止，随机生成验证码的功能就完成了。
 
@@ -212,7 +212,7 @@ ImageIO.write(bi, "JPG", Response.getOutputStream());
 
 到这里，整个用户界面就算完成了效果如图
 
-![效果预览](./images/servlet-jsp-shi-xian-yan-zheng-ma/6.webp)
+![效果预览](https://r2.xiongyuchi.com/servlet-jsp-shi-xian-yan-zheng-ma/6.webp)
 
 ## 4. 完成对验证码的验证功能
 
@@ -292,4 +292,4 @@ out.close();
 
 以上，一个基本的验证码功能就完成了。效果如图:
 
-![基本演示](./images/servlet-jsp-shi-xian-yan-zheng-ma/7.webp)
+![基本演示](https://r2.xiongyuchi.com/servlet-jsp-shi-xian-yan-zheng-ma/7.webp)

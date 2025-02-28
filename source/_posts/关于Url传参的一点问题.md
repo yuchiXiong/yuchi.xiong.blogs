@@ -53,8 +53,8 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 
 运行
 
-![直接访问](./images/guan-yu-url-chuan-can-de-yi-dian-wen-ti/1.webp)
+![直接访问](https://r2.xiongyuchi.com/guan-yu-url-chuan-can-de-yi-dian-wen-ti/1.webp)
 
-![url 修改](./images/guan-yu-url-chuan-can-de-yi-dian-wen-ti/2.webp)
+![url 修改](https://r2.xiongyuchi.com/guan-yu-url-chuan-can-de-yi-dian-wen-ti/2.webp)
 
 到此为止，终于实现了对于 url 传参的屏蔽效果，但事实上我并不知道这种所谓的屏蔽是否存在其意义，因为当我们使用`doPost()`方法传参时，用户是没有办法通过 url 得知控制参数的变量的，那么想要通过 url 修改参数的可行性也就有待考证了。

@@ -37,9 +37,9 @@ categories:
 
 这两者最大的区别就在于，当我们拉取页面结构时，基于服务端渲染的页面会返回完整的`HTML`结构，而基于客户端渲染的页面则只返回最基础的入口页标签。我们可以通过如下两张图对比差异：
 
-![服务端渲染](./images/ba-shi-pin-ruby-pa-chong-chu-tan/ssr.png)
+![服务端渲染](https://r2.xiongyuchi.com/ba-shi-pin-ruby-pa-chong-chu-tan/ssr.png)
 
-![客户端渲染](./images/ba-shi-pin-ruby-pa-chong-chu-tan/csr.png)
+![客户端渲染](https://r2.xiongyuchi.com/ba-shi-pin-ruby-pa-chong-chu-tan/csr.png)
 
 上图我们拉取了服务端渲染的百度，很显然我们拿到了所有的页面标签；而下图中，我们拉取了客户端渲染的`antd pro`，在页面中，除了大量的`<script></script>`标签外，我们只看到了少数入口标签如`<div id='root'></div>`。
 
@@ -66,9 +66,9 @@ categories:
 
 可以看到如下图所示，我们右击选择查看网页源代码，就可以看到该页面的列表实际上使用了`JavaScript`来渲染。
 
-![首页列表](./images/ba-shi-pin-ruby-pa-chong-chu-tan/home_list.png)
+![首页列表](https://r2.xiongyuchi.com/ba-shi-pin-ruby-pa-chong-chu-tan/home_list.png)
 
-![列表 js 脚本](./images/ba-shi-pin-ruby-pa-chong-chu-tan/home_list_javascript.png)
+![列表 js 脚本](https://r2.xiongyuchi.com/ba-shi-pin-ruby-pa-chong-chu-tan/home_list_javascript.png)
 
 确定了列表是使用`JavaScript`渲染之后，我们可以打开`Chrome`开发者工具，选择`network`里的`XHR`并刷新页面，我们不难找到有个叫做`launchpad/fetch`的接口，它的返回值里包含了一个长度为 16 的数组，页面里的列表正是使用了这个数组进行遍历渲染。稍微查阅一下该请求的请求头，参数等部分，我们很容易得到如下信息：
 
@@ -101,7 +101,7 @@ end
 在我刚写完获取首页列表项（我们后面统称为子页面）的访问链接时，我的老板又给我追加了一个任务：**下载子页面上的视频**。
 
 没有任何问题，我们依然从页面审查开始：
-![视频页面元素](./images/ba-shi-pin-ruby-pa-chong-chu-tan/video_href.png)
+![视频页面元素](https://r2.xiongyuchi.com/ba-shi-pin-ruby-pa-chong-chu-tan/video_href.png)
 
 如图我们首先确定了这个页面（至少视频部分）是使用服务端渲染的，并且很快找到了页面中的`video`元素，不难发现`src`属性中的链接似乎就是我们希望找到的东西，将其复制，在浏览器中打开，成功看到了我们想要的视频，Good~
 
@@ -124,7 +124,7 @@ end
 
 我们使用`GET`方法请求该属性即可拿到视频的数据，然后将其写出到指定的文件目录里，一个视频就简单粗暴的下载好了，为了让每个视频都有自己的名字，我们简单的使用字符串方法截取了视频的名字，现在当我们运行脚本，就可以看到`videos`目录下有一个又一个视频冒出来~
 
-![下载视频](./images/ba-shi-pin-ruby-pa-chong-chu-tan/download_video_result.png)
+![下载视频](https://r2.xiongyuchi.com/ba-shi-pin-ruby-pa-chong-chu-tan/download_video_result.png)
 
 #### 2.3.3 访问子页面获取资源提取码与分享地址
 

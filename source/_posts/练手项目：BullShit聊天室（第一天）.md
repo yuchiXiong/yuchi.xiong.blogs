@@ -12,7 +12,7 @@ categories:
 
 用一个页面 不断从数据库读取内容（用户消息），并对每一条记录进行排版。先做出后端的逻辑，然后补上前端。
 
-![预想程序效果](./images/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/1.webp)
+![预想程序效果](https://r2.xiongyuchi.com/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/1.webp)
 
 ## 2. 实现
 
@@ -20,7 +20,7 @@ categories:
 
 没有做过专业的表结构分析- -所以只能想到哪儿做到哪儿
 
-![简单的不能再简单的表结构](./images/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/2.webp)
+![简单的不能再简单的表结构](https://r2.xiongyuchi.com/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/2.webp)
 
 
 ### 2.1 用于接受数据并排版，然后嵌入在用户聊天界面的页面`News.jsp`
@@ -32,11 +32,11 @@ categories:
 我一定要吐槽这种写法真的很傻 *，后面嵌入到用户界面闪闪闪个不停，并且滚动条完全没法拖动。
 - 第二版：为了解决局部刷新，学习了`AJAX`，同时也重写了之前的页面，将大部分`Jsp`代码都写进了`Servlet`中，不管怎么说至少我觉得舒服多了吧。
 
-![News.jsp 第二版](./images/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/3.webp)
+![News.jsp 第二版](https://r2.xiongyuchi.com/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/3.webp)
 
 说明：页面结构里本身什么都没有，页面加载之后启动`JavaScript`的计时器开始执行`Ajax`,`Ajax`发送请求到`GetNewsServlet`中，在`GetNewsServlet`中完成对数据库的遍历并将生成的代码发送回来，之后写入到页面。
 
-![GetNewsServlet](./images/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/4.webp)
+![GetNewsServlet](https://r2.xiongyuchi.com/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/4.webp)
 
 说明：这一版本也没有见多好= =！只是学了点`Ajax`之后，可以处理异步刷新了，至少不会闪啊闪的刷新了。
 
@@ -49,7 +49,7 @@ categories:
 - 第一版：最最最最最最最最无聊的垃圾代码，重复了 80% 的 jdbc 代码（剩下 20% 是把`Statement`换成了`PreparedStatement`）,使用表单传数据然后为了处理插入数据库的操作还专门写了一个`Seeding.jsp`的页面。
 - 第二版：前面已经写了获取`Connection`对象的工具类以及消息对应的实体类。此处又再前者的基础上增加了一个用于插入数据库的`SendNewsServlet`类。
 
-![相比遍历时的内容这里就相对比较简单了](./images/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/5.webp)
+![相比遍历时的内容这里就相对比较简单了](https://r2.xiongyuchi.com/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/5.webp)
 
 页面里的`ajax`还是要说一下的，一开始目的很纯粹只是发送数据到对应的`Servlet`，因为没有做规划所以当时的用户名用的是`String UserName="用户"`,之后扔到服务器上消息的显示着实不清晰，于是去找了个简单的接口获取 IP 地址和归属地
 
@@ -61,7 +61,7 @@ var address=returnCitySN["cname"]//获取地址
 
 之后的用户名就用这个来代替了，不过后续加入用户系统之后，这个肯定就不用了。
 
-![用户名](./images/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/6.webp)
+![用户名](https://r2.xiongyuchi.com/lian-shou-xiang-mu-bullshit-liao-tian-shi-di-yi-tian/6.webp)
 
 ## 3. 细节处理
 

@@ -72,6 +72,6 @@ if(black_top > PrintHeight){
 
 完成了这些，一个简单的游戏模型就有了。
 
-![别踩白块儿](./images/bie-cai-bai-kuai-er-html-ban-de-di-yi-tian/1.webp)
+![别踩白块儿](https://r2.xiongyuchi.com/bie-cai-bai-kuai-er-html-ban-de-di-yi-tian/1.webp)
 
 在这个地方遇到了一个问题，是关于事件冒泡的。在获取黑块时，获取了整个页面的黑块，之后计分的时候，事件体执行了多次，导致积分不能正常计入，目前正在鼓捣。
