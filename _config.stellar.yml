@@ -1,6 +1,7 @@
 logo:
   subtitle: '间歇性歌颂，间歇性发疯 | 鱼翅转身向山里走去'
-
+lazyload:
+  enable: false # [hexo clean && hexo s] is required after changing this value.
 
 inject:
   head:
