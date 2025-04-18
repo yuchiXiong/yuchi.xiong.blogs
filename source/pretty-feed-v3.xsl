@@ -142,9 +142,6 @@ This file is in BETA. Please test and contribute to the discussion:
           <nav>
             <ul>
               <li><a href="/index.html">主页</a></li>
-              <li><a href="/inside-black-hole.html">黑洞里</a></li>
-              <li><a href="/rss.xml">订阅</a></li>
-              <li><a href="/search.html">搜索</a></li>
             </ul>
             <select onchange="switchMode(this.value)" id="lightdark">
               <option value="auto">Auto</option>
@@ -157,11 +154,7 @@ This file is in BETA. Please test and contribute to the discussion:
           <p>
             <mark>这是一个 Atom 订阅流 (Atom feed) 你可以<button type="button" onclick="copyFeedUrl()" class="copyFeedBtn">复制当前 URL</button>进行订阅ლ(´ڡ`ლ)</mark>
           </p>
-          <p>
-            <mark>如果你是 Emacs 用户，可以使用 <a href="https://github.com/skeeto/elfeed">elfeed</a> 订阅，或者你可以用 <a href="https://follow.is">Folo</a> 这样的应用进行订阅 :)</mark>
-          </p>
           <p><mark>如果你对订阅流不了解, 你可以阅读一下 <a href="https://taxodium.ink/about-feeds.html">About Feeds</a>。</mark></p>
-          <p><mark>有任何问题，欢迎<a href="mailto:l-yanlei@hotmail.com">邮件</a>或者留言给我。</mark></p>
         </section>
         <div class="container">
           <header>
@@ -184,14 +177,8 @@ This file is in BETA. Please test and contribute to the discussion:
               </svg>
               <xsl:value-of select="atom:feed/atom:title"/>
             </h1>
-            <p>That the powerful play goes on, and you may contribute a verse.</p>
+            <p>间歇性歌颂，间歇性发疯。</p>
             <!-- <p><xsl:value-of select="atom:feed/atom:subtitle | atom:feed/atom:description"/></p> -->
-            <a>
-              <xsl:attribute name="href">
-                <xsl:value-of select="atom:feed/atom:link[@rel='alternate']/@href"/>
-              </xsl:attribute>
-              访问网站 ➙
-            </a>
           </header>
           <h2>最近更新</h2>
           <xsl:apply-templates select="atom:feed/atom:entry" />
