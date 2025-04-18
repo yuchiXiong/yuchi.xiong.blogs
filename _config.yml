@@ -34,7 +34,7 @@ feed:
   order_by: -date
   icon: icon.png
   autodiscovery: true
-  template:
+  template: ./atom.template.xml
 
 permalink_pinyin:
   enable: true
